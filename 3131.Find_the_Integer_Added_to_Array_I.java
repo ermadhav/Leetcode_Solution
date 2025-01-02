@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int addedInteger(int[] nums1, int[] nums2) {
         int x=0;
