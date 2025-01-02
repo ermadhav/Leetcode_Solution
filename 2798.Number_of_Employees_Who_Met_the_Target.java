@@ -9,3 +9,5 @@ class Solution {
         return n;
     }
 }
+
+// Use your basic Problem soving skills
