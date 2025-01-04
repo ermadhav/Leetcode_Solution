@@ -1,5 +1,5 @@
 class Solution {
-    public int removeElement(int[] nums, int val) {
+    public List<String> summaryRanges(int[] nums) {
         
     }
 }
