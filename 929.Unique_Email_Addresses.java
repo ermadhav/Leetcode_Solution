@@ -13,6 +13,7 @@ class Solution {
             // Remove everything after the first '+' 
             // and remove all '.' from the local part
             String local = parts[0].split("\\+")[0].replace(".", "");
+            // Combining the prossessed the array
             uniqueEmails.add(local + "@" + parts[1]);
         }
         
