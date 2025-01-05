@@ -1,4 +1,4 @@
-// import java.util.HashSet;
+// import java.util.HashSet; (optional)
 
 class Solution {
     public int numUniqueEmails(String[] emails) {
