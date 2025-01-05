@@ -9,7 +9,7 @@ class Solution {
             if(operations[i].equals("++X") || operations[i].equals("X++")) {
                 X++ ;
             } 
-            
+
             // Check if the operation is a decrement operation (--X or X--)            
             else if (operations[i].equals("--X") || operations[i].equals("X--")){
                 X--;
