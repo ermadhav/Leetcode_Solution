@@ -24,12 +24,8 @@ This repository contains my solutions to various **LeetCode problems**, implemen
 ### 📂 **Directory Structure:**  
 ```
 /Easy
-  - Problem1.java
-  - Problem2.java
-/Medium
-  - Problem1.java
-/Hard
-  - Problem1.java
+  - ProblemNumber.java
+
 ```
 
 ---
@@ -40,7 +36,7 @@ Feel free to share suggestions, improvements, or point out any bugs by opening a
 ---
 
 ### 🌟 **Let's Connect:**  
-- **LinkedIn:**   
+- **LinkedIn:** www.linkedin.com/in/ermadhav   
 - **Email:** contact.madhavtiwari@gmail.com  
 
 If you find this repository helpful, don’t forget to **⭐ Star** it!  
