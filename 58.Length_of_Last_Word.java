@@ -10,7 +10,7 @@ class Solution {
         // Storing the Last Word in a
         String a = newString[l-1];
 
-        
+        // Getting the length of last word 
         int ans = a.length();
 
         return ans;
