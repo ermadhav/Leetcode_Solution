@@ -10,6 +10,8 @@ class Solution {
 
         // Storing the age in numeric
         int numeric = Integer.parseInt(newDetails);
+
+        // Checking if age is > 60
         if( numeric > 60){
             count++;
         }
