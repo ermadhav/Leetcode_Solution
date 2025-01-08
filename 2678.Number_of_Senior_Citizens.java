@@ -13,7 +13,7 @@ class Solution {
 
         // Checking if age is > 60
         if( numeric > 60){
-            count++;
+            count++; // Increasing the count if age is greater than 60
         }
         }
         return count;
