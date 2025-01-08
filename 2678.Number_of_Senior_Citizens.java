@@ -4,6 +4,8 @@ class Solution {
 
         //Iterating Through details using for loop
         for(int i=0; i<details.length; i++){
+
+        // Getting the age from the details using .substring()    
         String newDetails = details[i].substring(11,13);
         int numeric = Integer.parseInt(newDetails);
         if( numeric > 60){
