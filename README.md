@@ -40,8 +40,8 @@ Feel free to share suggestions, improvements, or point out any bugs by opening a
 ---
 
 ### 🌟 **Let's Connect:**  
-- **LinkedIn:** [Your LinkedIn Link]  
-- **Email:** [Your Email Address]  
+- **LinkedIn:**   
+- **Email:** contact.madhavtiwari@gmail.com  
 
 If you find this repository helpful, don’t forget to **⭐ Star** it!  
 
