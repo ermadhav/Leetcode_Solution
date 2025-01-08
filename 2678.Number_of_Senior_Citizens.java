@@ -7,6 +7,8 @@ class Solution {
 
         // Getting the age from the details using .substring()    
         String newDetails = details[i].substring(11,13);
+
+        // Storing the age in numeric
         int numeric = Integer.parseInt(newDetails);
         if( numeric > 60){
             count++;
