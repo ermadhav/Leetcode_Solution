@@ -4,6 +4,8 @@ class Solution {
 
         // Iterating over each string in the patterns array.
        for(int i=0; i<patterns.length; i++){
+
+        //Checking if word contains any letter of patterns
         if(word.contains(patterns[i])){
             count++;
         }
