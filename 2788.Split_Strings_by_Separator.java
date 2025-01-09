@@ -5,6 +5,8 @@ class Solution {
     public List<String> splitWordsBySeparator(List<String> words, char separator) {
         
         List<String> result = new ArrayList<>();
+
+        // Convert separator char to string
         String separatorStr = String.valueOf(separator);
 
         for(int i=0; i<words.size(); i++){
