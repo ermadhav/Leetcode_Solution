@@ -15,7 +15,7 @@ This repository contains my solutions to various **LeetCode problems**, implemen
 ---
 
 ### 🛠️ **How to Use This Repo:**  
-1. Browse problems categorized by their difficulty level (**Easy**, **Medium**, **Hard**) or topic.  
+1. Browse problems categorized by their Problem Number or Problem Name.  
 2. Open the Java solution file for the problem you’re interested in.  
 3. Run and test the code on your local machine or the LeetCode platform.  
 
@@ -23,13 +23,9 @@ This repository contains my solutions to various **LeetCode problems**, implemen
 
 ### 📂 **Directory Structure:**  
 ```
-/Easy
-  - Problem1.java
-  - Problem2.java
-/Medium
-  - Problem1.java
-/Hard
-  - Problem1.java
+
+  - ProblemNumber.java
+
 ```
 
 ---
@@ -40,8 +36,8 @@ Feel free to share suggestions, improvements, or point out any bugs by opening a
 ---
 
 ### 🌟 **Let's Connect:**  
-- **LinkedIn:** [Your LinkedIn Link]  
-- **Email:** [Your Email Address]  
+- **LinkedIn:** www.linkedin.com/in/ermadhav   
+- **Email:** contact.madhavtiwari@gmail.com  
 
 If you find this repository helpful, don’t forget to **⭐ Star** it!  
 
