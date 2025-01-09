@@ -8,7 +8,7 @@ class Solution {
 
          // Loop through each word
         for(int i=0; i<words.size(); i++){
-                sum += words.get(i).charAt(0);
+                sum += words.get(i).charAt(0);// Append the first character of each word to sum
         }
         if(sum.equals(s)){
             return true;
