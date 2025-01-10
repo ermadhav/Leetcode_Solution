@@ -1,7 +1,7 @@
 class Solution {
     public boolean areNumbersAscending(String s) {
         String[] tokens = s.split(" "); // Spliting the sentence into tokens
-        int lastNumber = -1; // Initialize the last number to an invalid value (e.g., -1)
+        int lastNumber = -1; // Initialize the last number to an invalid value 
 
         for (String token : tokens) { // Correctly iterate over the tokens
             // Check if the token is a number
