@@ -12,7 +12,7 @@ class Solution {
                     count++;
                 }
                 break;
-                case "color":
+                case "color":// If ruleKey is "color", check the second element
                 if(items.get(i).get(1).equals(ruleValue)){
                     count++;
                 }
