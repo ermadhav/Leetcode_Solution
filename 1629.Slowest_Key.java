@@ -3,6 +3,7 @@ class Solution {
         int maxDuration = releaseTimes[0]; // Initialize maxDuration with the first key press duration
         char resultKey = keysPressed.charAt(0);// Initialize resultKey as the first key pressed
 
+        // Loop through the rest of the keys pressed
         for(int i=1; i<keysPressed.length(); i++){
             int duration = releaseTimes[i]-releaseTimes[i-1];
 
