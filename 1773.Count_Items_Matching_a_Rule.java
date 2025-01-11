@@ -17,7 +17,7 @@ class Solution {
                     count++;
                 }
                 break;
-                case "name":
+                case "name":// If ruleKey is "name", check the third element
                 if(items.get(i).get(2).equals(ruleValue)){
                     count++;
                 }
