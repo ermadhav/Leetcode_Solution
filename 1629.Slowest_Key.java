@@ -11,7 +11,7 @@ class Solution {
 
             // If current key press duration is longer or the same but lexicographically larger, update result
             if(duration > maxDuration || (duration == maxDuration && keysPressed.charAt(i) > resultKey)){
-                maxDuration = duration;
+                maxDuration = duration;// Update max duration
                 resultKey = keysPressed.charAt(i);
             }
         }
