@@ -9,7 +9,7 @@ class Solution {
             switch(ruleKey){
                 case "type": // If ruleKey is "type", check the first element
                 if(items.get(i).get(0).equals(ruleValue)){
-                    count++;
+                    count++;// Increment count in all the case
                 }
                 break;
                 case "color":// If ruleKey is "color", check the second element
