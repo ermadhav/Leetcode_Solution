@@ -3,6 +3,8 @@ import java.util.List;
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count =0;
+
+         // Iterate through each item
         for(int i=0; i<items.size(); i++){
             switch(ruleKey){
                 case "type":
