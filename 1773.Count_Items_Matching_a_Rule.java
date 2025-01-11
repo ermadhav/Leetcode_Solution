@@ -7,7 +7,7 @@ class Solution {
          // Iterate through each item
         for(int i=0; i<items.size(); i++){
             switch(ruleKey){
-                case "type":
+                case "type": // If ruleKey is "type", check the first element
                 if(items.get(i).get(0).equals(ruleValue)){
                     count++;
                 }
