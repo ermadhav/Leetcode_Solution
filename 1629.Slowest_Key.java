@@ -5,6 +5,8 @@ class Solution {
 
         // Loop through the rest of the keys pressed
         for(int i=1; i<keysPressed.length(); i++){
+
+            // Calculate the duration of the current key press
             int duration = releaseTimes[i]-releaseTimes[i-1];
 
             if(duration > maxDuration || (duration == maxDuration && keysPressed.charAt(i) > resultKey)){
