@@ -9,6 +9,7 @@ class Solution {
             // Calculate the duration of the current key press
             int duration = releaseTimes[i]-releaseTimes[i-1];
 
+            // If current key press duration is longer or the same but lexicographically larger, update result
             if(duration > maxDuration || (duration == maxDuration && keysPressed.charAt(i) > resultKey)){
                 maxDuration = duration;
                 resultKey = keysPressed.charAt(i);
