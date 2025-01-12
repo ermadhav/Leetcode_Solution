@@ -6,7 +6,7 @@ class Solution {
             sum += widths[ch -'a'];// Add character width to the current line
             if(sum>100){
             row++;// Start a new line
-            sum = widths[ch-'a'];
+            sum = widths[ch-'a'];// Reset sum for the new line
             }
         }
         return new int[] {row, sum};
