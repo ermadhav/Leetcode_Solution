@@ -9,6 +9,6 @@ class Solution {
             sum = widths[ch-'a'];// Reset sum for the new line
             }
         }
-        return new int[] {row, sum};
+        return new int[] {row, sum};// Return total rows and width of the last line
     }
 }
