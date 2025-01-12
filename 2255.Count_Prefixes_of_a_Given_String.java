@@ -7,6 +7,8 @@ class Solution {
 
              // Check if the string 's' starts with the current word
             if(s.startsWith(words[i])){
+
+                // If true, increment in the count
                 count++;
             }
         }
