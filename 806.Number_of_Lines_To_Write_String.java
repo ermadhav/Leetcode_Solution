@@ -5,7 +5,7 @@ class Solution {
             char ch = s.charAt(i);
             sum += widths[ch -'a'];// Add character width to the current line
             if(sum>100){
-            row++;
+            row++;// Start a new line
             sum = widths[ch-'a'];
             }
         }
