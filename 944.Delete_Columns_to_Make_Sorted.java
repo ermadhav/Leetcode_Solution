@@ -17,7 +17,6 @@ class Solution {
                 }
             }
         }
-
         // Return the total number of columns to delete
         return deleteCount;
     }
