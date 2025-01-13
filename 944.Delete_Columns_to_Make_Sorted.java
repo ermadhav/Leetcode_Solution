@@ -2,7 +2,6 @@ class Solution {
     public int minDeletionSize(String[] strs) {
         int numRows = strs.length;
         int numCols = strs[0].length();
-
         // Initialize a counter for the number of columns to delete
         int deleteCount = 0;
         // Iterate over each column
