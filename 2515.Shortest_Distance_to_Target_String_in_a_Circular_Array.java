@@ -36,7 +36,6 @@ class Solution {
             count++;
             left++;
         }
-
         return Math.min(left, right);
     }
 }
