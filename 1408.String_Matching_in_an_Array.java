@@ -12,7 +12,7 @@ class Solution {
             for(int j=0; j<words.length; j++){
                 if(i!=j && words[j].contains(words[i])){
                     result.add(words[i]);
-                    break;
+                    break;// Avoid adding duplicates
                 }
             }
         }
