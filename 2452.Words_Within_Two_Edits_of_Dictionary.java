@@ -8,6 +8,7 @@ class Solution {
      List<String> result = new ArrayList<>();
         for (String query : queries) {
             for (String word : dictionary) {
+                // Check if the difference between query and word is at most 2
                 if (countDifferences(query, word) <= 2) {
                     result.add(query);
                     break;
