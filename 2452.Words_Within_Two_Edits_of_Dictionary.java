@@ -21,7 +21,7 @@ class Solution {
     private static int countDifferences(String a, String b) {
         int count = 0;
         for (int i = 0; i < a.length(); i++) {
-            if (a.charAt(i) != b.charAt(i) && ++count > 2) return count;
+            if (a.charAt(i) != b.charAt(i) && ++count > 2) return count;// Stop early if differences exceed 2
         }
         return count;
     }
