@@ -17,7 +17,7 @@ class Solution {
         }
         return result;
     }
-
+     // Helper method to count character differences between two strings
     private static int countDifferences(String a, String b) {
         int count = 0;
         for (int i = 0; i < a.length(); i++) {
