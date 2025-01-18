@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Solution {
     public List<String> twoEditWords(String[] queries, String[] dictionary) {
      List<String> result = new ArrayList<>();
