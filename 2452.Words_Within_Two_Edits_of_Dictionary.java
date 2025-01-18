@@ -11,7 +11,7 @@ class Solution {
                 // Check if the difference between query and word is at most 2
                 if (countDifferences(query, word) <= 2) {
                     result.add(query);// Add query to result if condition is met
-                    break;
+                    break;// Stop checking further for this query
                 }
             }
         }
