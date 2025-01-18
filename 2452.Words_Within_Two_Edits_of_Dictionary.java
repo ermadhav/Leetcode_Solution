@@ -3,6 +3,8 @@ import java.util.List;
 
 class Solution {
     public List<String> twoEditWords(String[] queries, String[] dictionary) {
+    
+        // Method to find all words from queries that are within 2 edits of any word in the dictionary
      List<String> result = new ArrayList<>();
         for (String query : queries) {
             for (String word : dictionary) {
