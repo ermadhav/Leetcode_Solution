@@ -6,7 +6,6 @@ class Solution {
 
         // Morse code representations for each letter in the English alphabet
         String[] morseCode = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
-
         // A set to store unique transformations
         Set<String> transformations = new HashSet<>();
         // Iterate through each word in the array
