@@ -9,7 +9,6 @@ class Solution {
 
         // A set to store unique transformations
         Set<String> transformations = new HashSet<>();
-
         // Iterate through each word in the array
         for (String word : words) {
             StringBuilder transformation = new StringBuilder();
