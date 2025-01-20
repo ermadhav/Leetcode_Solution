@@ -13,7 +13,6 @@ class Solution {
         // Iterate through each word in the array
         for (String word : words) {
             StringBuilder transformation = new StringBuilder();
-
             // Convert each character in the word to its Morse code equivalent
             for (char c : word.toCharArray()) {
                 transformation.append(morseCode[c - 'a']);
