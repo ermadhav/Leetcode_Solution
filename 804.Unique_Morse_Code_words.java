@@ -3,7 +3,7 @@ import java.util.Set;
 
 class Solution {
     public int uniqueMorseRepresentations(String[] words) {
-        
+
         // Morse code representations for each letter in the English alphabet
         String[] morseCode = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
 
@@ -18,7 +18,6 @@ class Solution {
             for (char c : word.toCharArray()) {
                 transformation.append(morseCode[c - 'a']);
             }
-
             // Add the transformation to the set
             transformations.add(transformation.toString());
         }
