@@ -21,7 +21,6 @@ class Solution {
             // Add the transformation to the set
             transformations.add(transformation.toString());
         }
-
         // The size of the set represents the number of unique transformations
         return transformations.size();
     }
