@@ -2,7 +2,6 @@ class Solution {
     public int numberOfBeams(String[] bank) {
         // Variable to store the total number of beams
         int totalBeams = 0;
-
         // Previous row's device count
         int prevCount = 0;
         // Iterate through each row in the bank
