@@ -15,7 +15,6 @@ class Solution {
                     currentCount++;
                 }
             }
-
             // If the current row has devices
             if (currentCount > 0) {
                 // Add the product of devices in the previous and current rows to the total
