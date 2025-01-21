@@ -5,7 +5,6 @@ class Solution {
 
         // Previous row's device count
         int prevCount = 0;
-
         // Iterate through each row in the bank
         for (String row : bank) {
             // Count the number of devices (i.e., '1's) in the current row
