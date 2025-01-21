@@ -21,7 +21,6 @@ class Solution {
                 prevCount = currentCount;
             }
         }
-
         return totalBeams;
     }
 }
