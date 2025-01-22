@@ -9,7 +9,6 @@ class Solution {
         }
         
         int count = 0;
-
         // Iterate through each word in the words array
         for (String word : words) {
             boolean isConsistent = true;
