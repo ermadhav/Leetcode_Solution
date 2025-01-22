@@ -1,6 +1,5 @@
 import java.util.HashSet;
 import java.util.Set;
-
 class Solution {
     public int countConsistentStrings(String allowed, String[] words) {
         // Create a set to store the characters in the allowed string
