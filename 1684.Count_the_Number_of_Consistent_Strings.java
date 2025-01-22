@@ -7,7 +7,6 @@ class Solution {
         for (char c : allowed.toCharArray()) {
             allowedSet.add(c);
         }
-        
         int count = 0;
         // Iterate through each word in the words array
         for (String word : words) {
