@@ -13,7 +13,6 @@ class Solution {
         // Iterate through each word in the words array
         for (String word : words) {
             boolean isConsistent = true;
-
             // Check if the word is consistent
             for (char c : word.toCharArray()) {
                 if (!allowedSet.contains(c)) {
