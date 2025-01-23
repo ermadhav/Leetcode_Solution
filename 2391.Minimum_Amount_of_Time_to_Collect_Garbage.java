@@ -26,7 +26,6 @@ class Solution {
 
         return totalCollectionTime + totalTravelTime;
     }
-
     private int calculateTravelTime(int[] travel, int lastHouse) {
         int travelTime = 0;
         for (int i = 0; i < lastHouse; i++) {
