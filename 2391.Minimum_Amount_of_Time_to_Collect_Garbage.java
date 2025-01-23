@@ -23,7 +23,7 @@ class Solution {
         totalTravelTime += calculateTravelTime(travel, lastMetal);
         totalTravelTime += calculateTravelTime(travel, lastPaper);
         totalTravelTime += calculateTravelTime(travel, lastGlass);
-
+        
         return totalCollectionTime + totalTravelTime;
     }
     private int calculateTravelTime(int[] travel, int lastHouse) {
