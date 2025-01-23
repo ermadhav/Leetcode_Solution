@@ -17,13 +17,13 @@ class Solution {
                 lastGlass = i;
             }
         }
-
+        
         // Calculate travel times
         int totalTravelTime = 0;
         totalTravelTime += calculateTravelTime(travel, lastMetal);
         totalTravelTime += calculateTravelTime(travel, lastPaper);
         totalTravelTime += calculateTravelTime(travel, lastGlass);
-        
+
         return totalCollectionTime + totalTravelTime;
     }
     private int calculateTravelTime(int[] travel, int lastHouse) {
