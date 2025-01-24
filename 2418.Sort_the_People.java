@@ -24,7 +24,6 @@ class Solution {
     private static class Person {
         String name;
         int height;
-
         Person(String name, int height) {
             this.name = name;
             this.height = height;
