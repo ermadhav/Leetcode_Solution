@@ -16,7 +16,6 @@ class Solution {
         for (int i = 0; i < people.size(); i++) {
             sortedNames[i] = people.get(i).name;
         }
-
         return sortedNames;
     }
     // Helper class to represent a person with a name and height
