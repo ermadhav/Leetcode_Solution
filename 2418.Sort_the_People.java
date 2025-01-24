@@ -7,7 +7,6 @@ class Solution {
         for (int i = 0; i < names.length; i++) {
             people.add(new Person(names[i], heights[i]));
         }
-
         // Sort the list in descending order of heights
         Collections.sort(people, (a, b) -> b.height - a.height);
         // Extract the names from the sorted list
