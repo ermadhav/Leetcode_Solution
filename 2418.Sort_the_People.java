@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
         // Create a list of pairs where each pair contains a name and its corresponding height
