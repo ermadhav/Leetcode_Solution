@@ -19,7 +19,6 @@ class Solution {
 
         return sortedNames;
     }
-
     // Helper class to represent a person with a name and height
     private static class Person {
         String name;
