@@ -10,7 +10,6 @@ class Solution {
 
         // Sort the list in descending order of heights
         Collections.sort(people, (a, b) -> b.height - a.height);
-
         // Extract the names from the sorted list
         String[] sortedNames = new String[names.length];
         for (int i = 0; i < people.size(); i++) {
