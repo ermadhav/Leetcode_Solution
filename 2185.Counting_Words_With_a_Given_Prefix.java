@@ -8,6 +8,6 @@ class Solution {
                 count++;// Increment the counter if the condition is true
             }
         }
-        return count;
+        return count; // Return the final count of words with the prefix
     }
 }
