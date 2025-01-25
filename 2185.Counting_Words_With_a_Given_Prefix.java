@@ -5,7 +5,7 @@ class Solution {
         for (String word : words) {
             // Check if the word starts with the specified prefix
             if (word.startsWith(pref)) {
-                count++;
+                count++;// Increment the counter if the condition is true
             }
         }
         return count;
