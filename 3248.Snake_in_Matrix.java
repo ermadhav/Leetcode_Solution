@@ -4,7 +4,6 @@ class Solution {
     public int finalPositionOfSnake(int n, List<String> commands) {
         // Initial position (row, col)
         int row = 0, col = 0;
-        
         // Process each command
         for (String command : commands) {
             switch (command) {
