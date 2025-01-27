@@ -1,5 +1,4 @@
 import java.util.List;
-
 class Solution {
     public int finalPositionOfSnake(int n, List<String> commands) {
         // Initial position (row, col)
