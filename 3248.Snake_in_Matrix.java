@@ -22,7 +22,6 @@ class Solution {
                     break;
             }
         }
-        
         // Convert the final position (row, col) to a single integer
         return row * n + col;
     }
