@@ -19,6 +19,7 @@ class Solution {
             return nums[nums.length/2];
             // If the array has an odd number of elements, return the element just after the middle
         }else{
+            // Rounding the index (though this is unnecessary because the division result is always an integer for odd numbers)
             int num = Math.round(nums.length/2);
             return nums[num];
         }
