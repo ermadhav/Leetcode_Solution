@@ -21,7 +21,7 @@ class Solution {
         }else{
             // Rounding the index (though this is unnecessary because the division result is always an integer for odd numbers)
             int num = Math.round(nums.length/2);// Round to the nearest integer
-            return nums[num];
+            return nums[num];// Return the element at the rounded index
         }
     }
 }
