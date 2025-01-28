@@ -11,12 +11,13 @@ class Solution {
                     nums[j+1] = temp;
                 }
             }
-        // If there are only 1 or 2 elements, return -1 as there is no "non-min or non-max" element
+            // If there are only 1 or 2 elements, return -1 as there is no "non-min or non-max" element
         }if(nums.length == 2 || nums.length == 1){
             return -1;
             // If the array has an even number of elements, return the middle element
         }else if(nums.length % 2 == 0){
             return nums[nums.length/2];
+            // If the array has an odd number of elements, return the element just after the middle
         }else{
             int num = Math.round(nums.length/2);
             return nums[num];
