@@ -11,6 +11,7 @@ class Solution {
                     nums[j+1] = temp;
                 }
             }
+        // If there are only 1 or 2 elements, return -1 as there is no "non-min or non-max" element
         }if(nums.length == 2 || nums.length == 1){
             return -1;
         }else if(nums.length % 2 == 0){
