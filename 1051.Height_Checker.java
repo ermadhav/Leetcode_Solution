@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int heightChecker(int[] heights) {
         int count = 0;
