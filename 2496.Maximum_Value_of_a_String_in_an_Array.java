@@ -1,7 +1,6 @@
 class Solution {
     public int maximumValue(String[] strs) {
         int maxVal = 0; // Initialize max value
-
         for (int i = 0; i < strs.length; i++) {
             int value;
             if (strs[i].matches("\\d+")) { // Check if the string contains only digits
