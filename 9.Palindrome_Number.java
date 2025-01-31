@@ -1,8 +1,13 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        String str = Integer.toString(x);
-        StringBuilder reversedStr = new  StringBuilder(str);
-        reversedStr.reverse();
-        return str.equals(reversedStr.toString());
+         // Convert the integer to string
+         String str = Integer.toString(x);
+        
+         // Create a StringBuilder and reverse the string
+         StringBuilder reversedStr = new StringBuilder(str);
+         reversedStr.reverse();
+         
+         // Compare the original string with the reversed string
+         return str.equals(reversedStr.toString());
     }
 }
