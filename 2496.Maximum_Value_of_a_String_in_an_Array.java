@@ -10,7 +10,6 @@ class Solution {
             } else {
                 value = strs[i].length(); // Use the length of the string
             }
-            
             maxVal = Math.max(maxVal, value); // Update max value
         }
         return maxVal;
