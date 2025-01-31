@@ -13,7 +13,6 @@ class Solution {
             
             maxVal = Math.max(maxVal, value); // Update max value
         }
-
         return maxVal;
     }
 }
