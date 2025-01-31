@@ -4,7 +4,6 @@ class Solution {
 
         for (int i = 0; i < strs.length; i++) {
             int value;
-            
             if (strs[i].matches("\\d+")) { // Check if the string contains only digits
                 value = Integer.parseInt(strs[i]); // Convert to integer
             } else {
