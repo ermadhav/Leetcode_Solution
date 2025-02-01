@@ -16,7 +16,6 @@ class Solution {
         for (int i = 0; i < numStr.length(); i++) {
             result[i] = numStr.charAt(i) - '0';
         }
-        
         return result;
     }
 }
