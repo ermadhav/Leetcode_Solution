@@ -6,7 +6,6 @@ class Solution {
         if(lastElement == 0){
             sb.delete(sb.length() - 1, sb.length()); 
         } else if(x<0){
-            // sb.delete(lastElement, lastElement + 1);
             sb.insert(0, '-');
         }
          try {
