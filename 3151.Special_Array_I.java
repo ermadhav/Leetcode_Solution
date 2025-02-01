@@ -9,7 +9,6 @@ class Solution {
                 return false;
             }
         }
-        
         return true; // If all pairs follow the pattern, return true
     }
 }
