@@ -11,7 +11,6 @@ class Solution {
                 num1 = nums[i];  // Reset num1 for the new subarray
             }
         }
-
         return Math.max(max, num1);  // Final max update to include last subarray
     }
 }
