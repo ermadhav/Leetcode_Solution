@@ -18,9 +18,4 @@ class Solution {
         }
         return res.toString();
     }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        System.out.println(sol.removeOuterParentheses("(()())(())")); // Output: "()()()"
-    }
 }
