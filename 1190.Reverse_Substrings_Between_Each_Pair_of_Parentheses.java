@@ -16,7 +16,6 @@ class Solution {
                 current.append(ch); // Add characters normally
             }
         }
-
         return current.toString(); // Final result
     }
 }
