@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class Solution {
     public String minRemoveToMakeValid(String s) {
         // Use StringBuilder for efficient string manipulation
