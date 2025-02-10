@@ -12,7 +12,6 @@ class Solution {
                 stack.append(c); // Add current character to stack
             }
         }
-        
         return stack.toString();
     }
 }
