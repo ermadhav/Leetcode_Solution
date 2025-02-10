@@ -18,7 +18,6 @@ class Solution {
                 stack.append(c);
             }
         }
-        
         // Convert StringBuilder to a string and return the final result
         return stack.toString();
     }
