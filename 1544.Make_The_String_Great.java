@@ -1,13 +1,22 @@
+import java.util.Stack;
+
 public class Solution {
     public String makeGood(String s) {
-        StringBuilder sb = new StringBuilder(); // Using StringBuilder as a stack
+        Stack<Character> stack = new Stack<>(); // Stack to store characters
+        
+        // Iterate through each character in the string
         for (char c : s.toCharArray()) {
-            // Check if the last character in sb and current character form a bad pair
-            if (sb.length() > 0 && Math.abs(sb.charAt(sb.length() - 1) - c) == 32) 
-                sb.setLength(sb.length() - 1); // Remove the last character if it forms a bad pair
+            // Check if the stack is not empty and the top character forms a bad pair with the current character
+            if (!stack.isEmpty() && Math.abs(stack.peek() - c) == 32) 
+                stack.pop(); // Remove the last character if it forms a bad pair
             else 
-                sb.append(c); // Otherwise, add the current character to sb
+                stack.push(c); // Otherwise, add the current character to the stack
         }
-        return sb.toString(); // Return the modified string
+        
+        // Build the final string from the remaining characters in the stack
+        StringBuilder result = new StringBuilder();
+        for (char c : stack) result.append(c);
+        
+        return result.toString(); // Return the modified string
     }
 }
