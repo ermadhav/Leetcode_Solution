@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class Solution {
+ class Solution {
     public String makeGood(String s) {
         Stack<Character> stack = new Stack<>(); // Stack to store characters
         
