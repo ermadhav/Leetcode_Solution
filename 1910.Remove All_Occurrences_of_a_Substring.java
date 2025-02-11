@@ -1,4 +1,4 @@
-public class RemoveAll_Occurrences_of_a_Substring {
+public class RemoveSubstring {
     public static String removeOccurrences(String s, String part) {
         while (s.contains(part)) {  // Keep removing while "part" exists in "s"
             int index = s.indexOf(part);  // Find the first occurrence
