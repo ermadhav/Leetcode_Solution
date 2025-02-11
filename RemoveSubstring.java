@@ -6,12 +6,4 @@ public class RemoveSubstring {
         }
         return s;
     }
-
-    public static void main(String[] args) {
-        String s = "daabcbaabcbc";
-        String part = "abc";
-        
-        String result = removeOccurrences(s, part);
-        System.out.println(result);  // Output: "dbc"
-    }
 }
