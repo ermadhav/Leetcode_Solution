@@ -15,7 +15,6 @@ class Solution {
                 stack.push(part);  // Valid directory name
             }
         }
-
         // Build the canonical path
         return "/" + String.join("/", stack);
     }
