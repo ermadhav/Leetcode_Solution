@@ -6,7 +6,7 @@ class Solution {
 
         // Add the two numbers
         java.math.BigInteger sum = num1.add(num2);
-
+        
         // Convert the sum back to a binary string
         return sum.toString(2);
     }
