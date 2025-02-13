@@ -1,4 +1,3 @@
-
 class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>(); // Stack to store operands
