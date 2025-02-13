@@ -4,6 +4,7 @@ class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>(); // Stack to store operands
         for (String token : tokens) {
+            
             // If the token is an operator, pop two operands and apply the operation
             if ("+-*/".contains(token)) {
                 int b = stack.pop(); // Second operand
@@ -20,7 +21,7 @@ class Solution {
                 stack.push(Integer.parseInt(token));
             }
         }
-        
+
         return stack.pop(); // The final result is the last element in the stack
     }
 }
