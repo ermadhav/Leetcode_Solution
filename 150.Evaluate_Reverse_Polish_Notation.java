@@ -9,7 +9,6 @@ class Solution {
             if ("+-*/".contains(token)) {
                 int b = stack.pop(); // Second operand
                 int a = stack.pop(); // First operand
-                
                 // Perform the operation based on the operator
                 switch (token) {
                     case "+": stack.push(a + b); break; // Addition
