@@ -20,6 +20,7 @@ class Solution {
                 stack.push(Integer.parseInt(token));
             }
         }
+        
         return stack.pop(); // The final result is the last element in the stack
     }
 }
