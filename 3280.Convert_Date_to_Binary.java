@@ -8,6 +8,4 @@ class Solution {
                Integer.toBinaryString(Integer.parseInt(parts[1])) + "-" + // Convert month to binary
                Integer.toBinaryString(Integer.parseInt(parts[2]));       // Convert day to binary
     }
-
-   
 }
