@@ -16,7 +16,6 @@ class Solution {
         // Step 2: Traverse the string from right to left
         for (int i = s.length() - 1; i >= 0; i--) {
             int currentValue = romanMap.get(s.charAt(i));
-
             // Step 3: If a smaller value comes before a larger one, subtract it
             if (currentValue < prevValue) {
                 total -= currentValue;
