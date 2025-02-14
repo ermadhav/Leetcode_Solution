@@ -7,5 +7,6 @@ class Solution {
         return Integer.toBinaryString(Integer.parseInt(parts[0])) + "-" + // Convert year to binary
                 Integer.toBinaryString(Integer.parseInt(parts[1])) + "-" + // Convert month to binary
                 Integer.toBinaryString(Integer.parseInt(parts[2])); // Convert day to binary
+                
     }
 }
