@@ -9,7 +9,6 @@ class Solution {
         romanMap.put('C', 100);
         romanMap.put('D', 500);
         romanMap.put('M', 1000);
-
         int total = 0;
         int prevValue = 0;
 
