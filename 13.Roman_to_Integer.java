@@ -25,7 +25,6 @@ class Solution {
             // Step 4: Update previous value
             prevValue = currentValue;
         }
-
         return total;
     }
 }
