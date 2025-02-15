@@ -21,7 +21,6 @@ class Solution {
             } else if (num > third) {
                 third = num;     // Update third to the new value
             }
-            
             // Track if Integer.MIN_VALUE exists in the array
             if (num == Long.MIN_VALUE) {
                 hasMinValue = true;
