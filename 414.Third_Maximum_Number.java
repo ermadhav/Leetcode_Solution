@@ -8,6 +8,7 @@ class Solution {
             if (num == first || num == second || num == third) {
                 continue;
             }
+            
             // Update the first, second, and third maximums accordingly
             if (num > first) {
                 third = second;  // Move second to third
@@ -19,7 +20,7 @@ class Solution {
             } else if (num > third) {
                 third = num;     // Update third to the new value
             }
-            
+
             // Track if Integer.MIN_VALUE exists in the array
             if (num == Long.MIN_VALUE) {
                 hasMinValue = true;
