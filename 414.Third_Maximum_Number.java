@@ -19,12 +19,13 @@ class Solution {
             } else if (num > third) {
                 third = num;     // Update third to the new value
             }
+            
             // Track if Integer.MIN_VALUE exists in the array
             if (num == Long.MIN_VALUE) {
                 hasMinValue = true;
             }
         }
-        
+
         // If we found a third maximum, return it; otherwise, return the first maximum
         return (third != Long.MIN_VALUE || hasMinValue) ? (int) third : (int) first;
     }
