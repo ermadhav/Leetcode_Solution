@@ -24,6 +24,7 @@ class Solution {
                 hasMinValue = true;
             }
         }
+        
         // If we found a third maximum, return it; otherwise, return the first maximum
         return (third != Long.MIN_VALUE || hasMinValue) ? (int) third : (int) first;
     }
