@@ -9,7 +9,6 @@ class Solution {
             if (num == first || num == second || num == third) {
                 continue;
             }
-
             // Update the first, second, and third maximums accordingly
             if (num > first) {
                 third = second;  // Move second to third
