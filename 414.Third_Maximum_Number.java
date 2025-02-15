@@ -1,6 +1,6 @@
 class Solution {
     public int thirdMax(int[] nums) {
-        
+
         // Initialize three variables to track the top three distinct maximums
         long first = Long.MIN_VALUE, second = Long.MIN_VALUE, third = Long.MIN_VALUE;
         boolean hasMinValue = false; // To handle cases where nums contains Integer.MIN_VALUE
