@@ -3,7 +3,6 @@ class Solution {
         // Initialize three variables to track the top three distinct maximums
         long first = Long.MIN_VALUE, second = Long.MIN_VALUE, third = Long.MIN_VALUE;
         boolean hasMinValue = false; // To handle cases where nums contains Integer.MIN_VALUE
-
         for (int num : nums) {
             // Skip if the number is already recorded in one of the top three
             if (num == first || num == second || num == third) {
