@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 class Solution {
     public int[] finalPrices(int[] prices) {
         int n = prices.length;
