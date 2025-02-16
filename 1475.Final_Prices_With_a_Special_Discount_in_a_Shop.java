@@ -4,6 +4,7 @@ class Solution {
         int n = prices.length;
         int[] result = new int[n]; // Array to store the final prices
         Stack<Integer> stack = new Stack<>(); // Monotonic stack to track indices of prices
+        
         // Iterate through each price in the array
         for (int i = 0; i < n; i++) {
             // Check if the stack is not empty and the current price is less than or equal 
@@ -14,7 +15,7 @@ class Solution {
             }
             stack.push(i); // Push the current index onto the stack
         }
-        
+
         // Fill the remaining indices in result (which had no discounts)
         while (!stack.isEmpty()) {
             int index = stack.pop();
