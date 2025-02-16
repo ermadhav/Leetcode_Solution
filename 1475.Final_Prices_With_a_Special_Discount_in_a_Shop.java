@@ -16,7 +16,6 @@ class Solution {
             }
             stack.push(i); // Push the current index onto the stack
         }
-
         // Fill the remaining indices in result (which had no discounts)
         while (!stack.isEmpty()) {
             int index = stack.pop();
