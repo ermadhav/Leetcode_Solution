@@ -19,6 +19,7 @@ class Solution {
             int index = stack.pop();
             result[index] = prices[index]; // No discount available, keep original price
         }
+        
         return result; // Return the final prices array
     }
 }
