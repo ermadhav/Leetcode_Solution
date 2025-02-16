@@ -14,12 +14,13 @@ class Solution {
             }
             stack.push(i); // Push the current index onto the stack
         }
+        
         // Fill the remaining indices in result (which had no discounts)
         while (!stack.isEmpty()) {
             int index = stack.pop();
             result[index] = prices[index]; // No discount available, keep original price
         }
-        
+
         return result; // Return the final prices array
     }
 }
