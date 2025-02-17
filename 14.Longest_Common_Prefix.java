@@ -13,6 +13,7 @@ class Solution {
 
         for (int i = 1; i < strs.length; i++) {
             // Keep reducing the prefix until it is a prefix of strs[i]
+            
             while (strs[i].indexOf(prefix) != 0) { 
                 // Shorten the prefix by removing the last character
                 prefix = prefix.substring(0, prefix.length() - 1); 
@@ -23,7 +24,7 @@ class Solution {
                 }
             }
         }
-        
+
         // Return the longest common prefix found
         return prefix;
     }
