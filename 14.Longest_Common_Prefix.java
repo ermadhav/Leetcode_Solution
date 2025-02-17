@@ -21,7 +21,6 @@ class Solution {
                 }
             }
         }
-        
         // Return the longest common prefix found
         return prefix;
     }
