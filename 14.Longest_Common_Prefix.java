@@ -1,4 +1,5 @@
 class Solution {
+    
     public String longestCommonPrefix(String[] strs) {
         // If the input array is empty or null, return an empty string
         if (strs == null || strs.length == 0) {
