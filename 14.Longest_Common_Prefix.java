@@ -3,8 +3,7 @@ class Solution {
         // If the input array is empty or null, return an empty string
         if (strs == null || strs.length == 0) {
             return "";
-        }
-        
+        }        
         // Start with the first string as the initial prefix
         String prefix = strs[0]; 
         // Loop through the rest of the strings in the array
