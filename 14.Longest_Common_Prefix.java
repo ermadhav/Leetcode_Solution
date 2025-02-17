@@ -10,7 +10,7 @@ class Solution {
         // Start with the first string as the initial prefix
         String prefix = strs[0]; 
         // Loop through the rest of the strings in the array
-        
+
         for (int i = 1; i < strs.length; i++) {
             // Keep reducing the prefix until it is a prefix of strs[i]
             while (strs[i].indexOf(prefix) != 0) { 
@@ -23,6 +23,7 @@ class Solution {
                 }
             }
         }
+        
         // Return the longest common prefix found
         return prefix;
     }
