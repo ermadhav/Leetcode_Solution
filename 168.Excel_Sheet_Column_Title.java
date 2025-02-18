@@ -2,6 +2,7 @@ class Solution {
     public String convertToTitle(int columnNumber) {
 
         StringBuilder sb = new StringBuilder();
+        
         // Loop until columnNumber becomes 0
         while (columnNumber > 0) {
 
