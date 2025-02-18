@@ -14,7 +14,6 @@ class Solution {
             // Move to the next position in sequence
             columnNumber /= 26;
         }
-
         // The sb is constructed in reverse order, so reverse it before returning
         return sb.reverse().toString();
     }
