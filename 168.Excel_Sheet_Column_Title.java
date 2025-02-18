@@ -2,7 +2,7 @@ class Solution {
     public String convertToTitle(int columnNumber) {
 
         StringBuilder sb = new StringBuilder();
-        
+
         // Loop until columnNumber becomes 0
         while (columnNumber > 0) {
 
@@ -11,7 +11,6 @@ class Solution {
             // Get the last character (A-Z)
             char ch = (char) ('A' + (columnNumber % 26)); 
             sb.append(ch);
-
             // Move to the next position in sequence
             columnNumber /= 26;
         }
