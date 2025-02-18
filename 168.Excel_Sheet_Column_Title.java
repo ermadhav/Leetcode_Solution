@@ -9,7 +9,6 @@ class Solution {
             // Get the last character (A-Z)
             char ch = (char) ('A' + (columnNumber % 26)); 
             sb.append(ch);
-            
             // Move to the next position in sequence
             columnNumber /= 26;
         }
