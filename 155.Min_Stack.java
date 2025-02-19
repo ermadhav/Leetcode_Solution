@@ -35,10 +35,9 @@ class MinStack {
     public int top() {
         return stack.peek();
     }
-    
+
     // Retrieves the minimum element in the stack
     public int getMin() {
         return minStack.peek();
     }
-
 }
