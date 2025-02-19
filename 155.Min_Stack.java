@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class MinStack {
 
     private Stack<Integer> stack;    // Main stack to store all elements
