@@ -14,8 +14,4 @@ public class UglyNumber {
         return n == 1;
     }
 
-    public static void main(String[] args) {
-        int testNumber = 30; // You can change this number to test other cases
-        System.out.println(isUgly(testNumber)); // Output: true
-    }
 }
