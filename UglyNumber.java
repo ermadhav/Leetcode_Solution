@@ -13,5 +13,4 @@ public class UglyNumber {
         // If the remaining number is 1, it's an ugly number
         return n == 1;
     }
-
 }
