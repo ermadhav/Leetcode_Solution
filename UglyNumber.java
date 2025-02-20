@@ -1,4 +1,5 @@
 public class UglyNumber {
+    
     public static boolean isUgly(int n) {
         if (n <= 0) return false; // Ugly numbers must be positive
         
