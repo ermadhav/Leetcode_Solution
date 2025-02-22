@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 public class ScoreOfParentheses {
     public static int scoreOfParentheses(String s) {
         Stack<Integer> stack = new Stack<>();
@@ -16,13 +15,5 @@ public class ScoreOfParentheses {
         }
         
         return stack.pop(); // The last element in the stack is the final score
-    }
-
-    public static void main(String[] args) {
-        // Test cases to validate the function
-        System.out.println(scoreOfParentheses("()"));         // Output: 1
-        System.out.println(scoreOfParentheses("(())"));       // Output: 2
-        System.out.println(scoreOfParentheses("()()"));       // Output: 2
-        System.out.println(scoreOfParentheses("(()(()))"));   // Output: 6
     }
 }
