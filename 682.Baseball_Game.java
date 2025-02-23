@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 class Solution {
     public int calPoints(String[] operations) {
         Stack<Integer> stack = new Stack<>();
