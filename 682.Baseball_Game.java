@@ -27,7 +27,6 @@ class Solution {
         for (int score : stack) {
             sum += score;
         }
-        
         return sum;
     }
 }
