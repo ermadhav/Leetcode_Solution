@@ -21,7 +21,6 @@ class Solution {
                 stack.push(Integer.parseInt(op));
             }
         }
-        
         // Sum up all scores
         int sum = 0;
         for (int score : stack) {
