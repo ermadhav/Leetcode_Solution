@@ -2,7 +2,6 @@ import java.util.Stack;
 class Solution {
     public int calPoints(String[] operations) {
         Stack<Integer> stack = new Stack<>();
-        
         for (String op : operations) {
             if (op.equals("+")) {
                 // Sum of the last two scores
