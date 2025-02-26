@@ -11,3 +11,4 @@ class Solution {
         return count; // Return the total count of trailing zeroes
     }
 }
+
