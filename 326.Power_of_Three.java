@@ -4,7 +4,6 @@ class Solution {
         if (n <= 0) {
             return false;
         }
-        
         // Keep dividing n by 3 while it is divisible by 3
         while (n % 3 == 0) {
             n /= 3; // Reduce n by dividing it by 3
