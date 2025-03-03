@@ -11,7 +11,6 @@ class Solution {
                 curr = curr.next;
             }
         }
-
         return head;  // Return the updated list without duplicates
     }
 }
