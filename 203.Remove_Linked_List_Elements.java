@@ -1,3 +1,12 @@
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
         // Create a dummy node that points to the original head
