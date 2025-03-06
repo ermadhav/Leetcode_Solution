@@ -1,3 +1,5 @@
+// 328. Odd Even Linked List
+
 class ListNode {
     int val;
     ListNode next;
@@ -7,7 +9,7 @@ class ListNode {
     }
 }
 
-public class oddEvenLinkedList {
+public class OddEvenLinkedList {
     public ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null) {
             return head; // If the list is empty or has only one node, return as is.
