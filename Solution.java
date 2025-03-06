@@ -20,7 +20,7 @@ public class Solution {
         while (even != null && even.next != null) {
             odd.next = even.next; // Link the current odd node to the next odd node
             odd = odd.next; // Move odd pointer
-
+            
             even.next = odd.next; // Link the current even node to the next even node
             even = even.next; // Move even pointer
         }
