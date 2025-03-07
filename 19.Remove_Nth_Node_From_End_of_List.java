@@ -10,6 +10,7 @@ class Solution {
             first = first.next;
         }
 
+        // Move first and second until first reaches the end
         while(first != null){
             first = first.next;
             second = second.next;
