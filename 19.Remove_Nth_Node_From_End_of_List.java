@@ -16,6 +16,7 @@ class Solution {
             second = second.next;
         }
 
+        // Remove the nth node from the end
         second.next = second.next.next;
         return dummy.next;
     }
