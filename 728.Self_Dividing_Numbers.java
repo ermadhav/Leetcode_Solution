@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
-        
+
         List<Integer> res = new ArrayList<>();
         // Iterate through all numbers in the given range
         for (int n = left; n <= right; n++)
@@ -19,5 +19,6 @@ class Solution {
             if (digit == 0 || n % digit != 0) return false;
         }
         return true; // If all digits pass, the number is self-dividing
+        
     }
 }
