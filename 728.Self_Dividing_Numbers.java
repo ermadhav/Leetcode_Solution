@@ -11,6 +11,7 @@ class Solution {
     }
 
     private boolean isSelfDividing(int n) {
+        
         // Iterate through each digit of the number
         for (int x = n; x > 0; x /= 10) {
             int digit = x % 10; // Extract the last digit
