@@ -9,7 +9,6 @@ class Solution {
             if (isSelfDividing(n)) res.add(n);
         return res;
     }
-    
     private boolean isSelfDividing(int n) {
         // Iterate through each digit of the number
         for (int x = n; x > 0; x /= 10) {
