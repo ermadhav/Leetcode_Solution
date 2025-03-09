@@ -3,6 +3,7 @@ class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
 
         List<Integer> res = new ArrayList<>();
+        
         // Iterate through all numbers in the given range
         for (int n = left; n <= right; n++)
             // Check if the number is self-dividing
@@ -11,7 +12,7 @@ class Solution {
     }
 
     private boolean isSelfDividing(int n) {
-        
+
         // Iterate through each digit of the number
         for (int x = n; x > 0; x /= 10) {
             int digit = x % 10; // Extract the last digit
