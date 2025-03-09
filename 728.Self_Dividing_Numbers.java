@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
 
@@ -19,6 +18,6 @@ class Solution {
             if (digit == 0 || n % digit != 0) return false;
         }
         return true; // If all digits pass, the number is self-dividing
-        
+
     }
 }
