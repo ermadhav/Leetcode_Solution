@@ -22,6 +22,7 @@ class Solution {
         
         // Traverse the linked list
         while (head != null) {
+            
             // Shift the current number left (multiply by 2) and add the current node's value
             num = num * 2 + head.val;
             
