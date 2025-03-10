@@ -1,3 +1,20 @@
+class ListNode {
+    int val;  // Value of the node (either 0 or 1)
+    ListNode next;  // Pointer to the next node in the list
+    
+    // Constructor to initialize the node with a value
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+    
+    // Constructor to initialize the node with a value and the next node reference
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
 class Solution {
     public int getDecimalValue(ListNode head) {
         int num = 0;  // Initialize result variable to store decimal value
