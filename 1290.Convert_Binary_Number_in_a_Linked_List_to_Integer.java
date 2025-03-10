@@ -1,5 +1,5 @@
 class ListNode {
-    
+
     int val;  // Value of the node (either 0 or 1)
     ListNode next;  // Pointer to the next node in the list
     
@@ -16,6 +16,7 @@ class ListNode {
     }
 }
 class Solution {
+    
     public int getDecimalValue(ListNode head) {
         int num = 0;  // Initialize result variable to store decimal value
         
