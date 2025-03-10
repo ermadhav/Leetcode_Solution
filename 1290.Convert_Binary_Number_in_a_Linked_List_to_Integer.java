@@ -16,9 +16,8 @@ class ListNode {
     }
 }
 class Solution {
-
     public int getDecimalValue(ListNode head) {
-        
+
         int num = 0;  // Initialize result variable to store decimal value
         
         // Traverse the linked list
