@@ -14,7 +14,6 @@ class ListNode {
         this.next = next;
     }
 }
-
 class Solution {
     public int getDecimalValue(ListNode head) {
         int num = 0;  // Initialize result variable to store decimal value
