@@ -1,4 +1,5 @@
 class ListNode {
+    
     int val;  // Value of the node (either 0 or 1)
     ListNode next;  // Pointer to the next node in the list
     
