@@ -9,7 +9,7 @@ class Solution {
         // Move `prev` to the node before `left`
         for (int i = 0; i < left - 1; i++) prev = prev.next;
         
-        Object curr = prev.next; // `curr` points to the start of the sublist
+        ListNode curr = prev.next; // `curr` points to the start of the sublist
         ListNode next;
         
         // Reverse nodes from position `left` to `right`
