@@ -2,7 +2,7 @@ class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if (head == null || left == right) return head; // Edge case: if list is empty or no need to reverse
         
-        ListNode dummy = new ListNode(0); // Dummy node to handle edge cases
+        ListNode dummy = new ListNode(); // Dummy node to handle edge cases
         dummy.next = head;
         ListNode prev = dummy;
         
