@@ -10,7 +10,7 @@ class Solution {
             return head;
         }
 
-        ListNode dummy = new ListNode(0); // Dummy node to handle edge cases
+        ListNode dummy = new ListNode(); // Dummy node to handle edge cases
         dummy.next = head;
         ListNode prev = dummy;
         ListNode current = head;
