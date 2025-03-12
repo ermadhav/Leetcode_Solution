@@ -3,12 +3,7 @@ class Solution {
         if (head == null || head.next == null) {
             return head;
         }
-
-        ListNode dummy = new ListNode(); // Dummy node to handle edge cases
-        dummy.next = head;
-        ListNode prev = dummy;
-        ListNode current = head;
-
+        
         while (current != null) {
             // Check if there is a duplicate
             while (current.next != null && current.val == current.next.val) {
