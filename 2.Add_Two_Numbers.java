@@ -13,12 +13,12 @@
 
             // Add value from l1 if it exists
             if (l1 != null) {
-                sum += l1.val;
+                sum +=(int) l1.val;
                 l1 = l1.next; // Move to next node in l1
             }
             // Add value from l2 if it exists
             if (l2 != null) {
-                sum += l2.val;
+                sum +=(int) l2.val;
                 l2 = l2.next; // Move to next node in l2
             }
 
