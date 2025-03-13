@@ -3,7 +3,7 @@
  class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // Create a dummy node to simplify handling of the head of the resulting list
-        ListNode dummyHead = new ListNode(0);
+        ListNode dummyHead = new ListNode();
         ListNode current = dummyHead; // Pointer to build the new linked list
         int carry = 0; // Variable to store carry from sum
 
@@ -26,7 +26,7 @@
             carry = sum / 10;
             
             // Create new node with the unit digit of the sum
-            current.next = new ListNode(sum % 10);
+            current.next = new ListNode();
             
             // Move the pointer to the next node
             current = current.next;
