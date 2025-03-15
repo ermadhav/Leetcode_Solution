@@ -1,5 +1,6 @@
 class Solution {
     public int mySqrt(int x) {
+        
         // Base cases: If x is 0 or 1, return x as the square root.
         if (x == 0 || x == 1) return x;
 
@@ -17,7 +18,7 @@ class Solution {
             } else {
                 right = mid - 1; // Reduce the search space
             }
-            
+
         }
 
         // The final answer is stored in `ans`, which is the largest integer whose square is ≤ x.
