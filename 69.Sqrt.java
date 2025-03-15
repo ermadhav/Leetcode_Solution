@@ -18,7 +18,6 @@ class Solution {
                 right = mid - 1; // Reduce the search space
             }
         }
-
         // The final answer is stored in `ans`, which is the largest integer whose square is ≤ x.
         return ans;
     }
