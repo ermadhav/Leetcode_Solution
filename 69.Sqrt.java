@@ -9,7 +9,7 @@ class Solution {
         while (left <= right) {
             // Calculate the middle value to prevent overflow
             int mid = left + (right - left) / 2;
-
+            
             // Use division instead of multiplication to avoid overflow: mid * mid <= x
             if (mid <= x / mid) { 
                 ans = mid;      // Update the possible answer
