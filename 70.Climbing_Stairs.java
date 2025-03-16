@@ -13,6 +13,7 @@ class Solution {
             first = second;
             second = temp;
         }
+        
         // The result will be in second after the loop
         return second;
     }
