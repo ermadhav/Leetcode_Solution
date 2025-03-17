@@ -1,5 +1,6 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
+        
         // Edge case: If the array is empty, return 0
         if (nums.length == 0) return 0;
         
@@ -19,6 +20,6 @@ class Solution {
 
         // Return the count of unique elements
         return k;
-        
+
     }
 }
