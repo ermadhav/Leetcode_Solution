@@ -19,5 +19,6 @@ class Solution {
 
         // Return the count of unique elements
         return k;
+        
     }
 }
