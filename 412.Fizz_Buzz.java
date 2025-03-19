@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public List<String> fizzBuzz(int n) {
-        
+
         // Initialize an ArrayList to store the result
         List<String> answer = new ArrayList<>();
         
@@ -28,5 +28,6 @@ class Solution {
         
         // Return the final list containing the FizzBuzz sequence
         return answer;
+        
     }
 }
