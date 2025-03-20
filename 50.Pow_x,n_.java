@@ -4,7 +4,7 @@ class Solution {
 
         // Handle negative exponent
         long exp = n; // Use long to prevent overflow
-        
+
         if (exp < 0) {
             x = 1 / x;
             exp = -exp; // Convert to positive safely
@@ -18,6 +18,7 @@ class Solution {
             x *= x; // Square x
             exp /= 2; // Reduce exponent
         }
+        
         return result;
     }
 }
