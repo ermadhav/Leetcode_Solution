@@ -4,6 +4,7 @@ class Solution {
 
         // Handle negative exponent
         long exp = n; // Use long to prevent overflow
+        
         if (exp < 0) {
             x = 1 / x;
             exp = -exp; // Convert to positive safely
