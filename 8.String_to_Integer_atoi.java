@@ -1,5 +1,6 @@
 class Solution {
     public int myAtoi(String s) {
+        
         int i = 0, n = s.length(), sign = 1, result = 0;
 
         // Step 1: Ignore leading whitespaces
