@@ -1,5 +1,7 @@
+import java.util.List;
+
 class Solution {
-    public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
+    public List mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         ListNode prevA = list1;  // Pointer to (a-1)th node
         for (int i = 0; i < a - 1; i++) {
             prevA = prevA.next;
