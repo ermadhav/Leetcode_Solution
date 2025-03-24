@@ -1,5 +1,6 @@
 class Solution {
     public boolean isOneBitCharacter(int[] bits) {
+        
         int l = bits.length; // Length the bits Array
         int i = 0; 
 
