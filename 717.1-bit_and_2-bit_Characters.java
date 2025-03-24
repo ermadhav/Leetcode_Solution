@@ -1,7 +1,7 @@
 class Solution {
     public boolean isOneBitCharacter(int[] bits) {
         int l = bits.length; // Length the bits Array
-        int i = 0;
+        int i = 0; 
 
         while (i < l - 1) { // Traverse until the second-last character
             if (bits[i] == 1) {
