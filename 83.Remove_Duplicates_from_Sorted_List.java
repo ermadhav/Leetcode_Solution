@@ -1,5 +1,7 @@
+import java.util.List;
+
 class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates(List head) {
         ListNode curr = head;  // Pointer to traverse the linked list
         
         while (curr != null && curr.next != null) { // Traverse until the end
