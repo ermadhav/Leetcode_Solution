@@ -1,5 +1,6 @@
 class Solution {
     public int countSegments(String s) {
+        
         // Trim leading/trailing spaces and split by one or more whitespace characters
         String[] segments = s.trim().split("\\s+");
         
