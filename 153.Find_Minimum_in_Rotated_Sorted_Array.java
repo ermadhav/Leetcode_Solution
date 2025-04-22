@@ -6,8 +6,7 @@ class Solution {
         while (left < right) {
             int mid = left + (right - left) / 2;
 
-            // If mid element is greater than the rightmost element,
-            // then the minimum is in the right half
+            // If mid element is greater than the rightmost element, then the minimum is in the right half
             if (nums[mid] > nums[right]) {
                 left = mid + 1;
             } else {
