@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public boolean canMakeArithmeticProgression(int[] arr) {
         Arrays.sort(arr);
