@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
         // Step 1: Sort by starting point ascending, and ending point descending
