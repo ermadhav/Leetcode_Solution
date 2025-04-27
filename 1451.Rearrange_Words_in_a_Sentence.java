@@ -14,9 +14,4 @@ public class Solution {
         // Capitalize the first letter of the final result and return it
         return Character.toUpperCase(result.charAt(0)) + result.substring(1);
     }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        System.out.println(sol.arrangeWords("Keep the code simple and clear"));
-    }
 }
