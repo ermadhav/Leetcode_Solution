@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);  // Sort the array
