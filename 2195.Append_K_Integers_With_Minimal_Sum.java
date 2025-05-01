@@ -2,29 +2,35 @@ import java.util.*;
 
 class Solution {
     public long minimalKSum(int[] nums, int k) {
-        Arrays.sort(nums);
+        Arrays.sort(nums); // Sort the array
         long sum = 0;
         int prev = 0;
 
         for (int num : nums) {
-            if (num == prev) continue; // skip duplicates
+            if (num == prev) continue; // Skip duplicates
 
-            int gap = num - prev - 1; // how many missing numbers between prev and num
+            int gap = num - prev - 1; // Count of missing numbers between prev and current
 
             if (gap >= k) {
-                // we can take all k missing numbers here
-                sum += (long)(prev + 1 + prev + k) * k / 2;
+                // If enough missing numbers to complete k
+                long a = prev + 1;
+                long b = prev + k;
+                sum += (a + b) * k / 2;
                 return sum;
             } else {
-                // take all numbers in this gap
-                sum += (long)(prev + 1 + num - 1) * gap / 2;
+                // Take all missing numbers in this gap
+                long a = prev + 1;
+                long b = num - 1;
+                sum += (a + b) * gap / 2;
                 k -= gap;
                 prev = num;
             }
         }
 
-        // If we still need to take more numbers after the largest in nums
-        sum += (long)(prev + 1 + prev + k) * k / 2;
+        // If still need more numbers after the last num
+        long a = prev + 1;
+        long b = prev + k;
+        sum += (a + b) * k / 2;
 
         return sum;
     }
