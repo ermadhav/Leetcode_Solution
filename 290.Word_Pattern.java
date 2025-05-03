@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Solution {
     public boolean wordPattern(String pattern, String s) {
         // Split the input string `s` into words by spaces
