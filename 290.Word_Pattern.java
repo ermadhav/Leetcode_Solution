@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
     public boolean wordPattern(String pattern, String s) {
