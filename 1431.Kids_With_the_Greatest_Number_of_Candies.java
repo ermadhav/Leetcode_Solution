@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         // Step 1: Find the true max first
