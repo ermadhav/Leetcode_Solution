@@ -12,7 +12,6 @@ class Solution {
                 res[i] = depth % 2; // Match closing with correct group
             }
         }
-
         return res;
     }
 }
