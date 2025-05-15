@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class RemoveKDuplicates {
     public static String removeDuplicates(String s, int k) {
         StringBuilder sb = new StringBuilder();         // Builds the final string
