@@ -1,56 +1,60 @@
 class Solution {
     public long maxScore(int[] nums) {
-        int n = nums.length;
+        int n = nums.length;  // Length of the input array
 
-        // Arrays to store prefix and suffix GCDs
-        int[] pre = new int[n + 1], suf = new int[n + 2];
+        // Arrays to store prefix and suffix GCD and LCM values
+        int[] prefixGCD = new int[n + 1];
+        int[] suffixGCD = new int[n + 2];
+        long[] prefixLCM = new long[n + 1];
+        long[] suffixLCM = new long[n + 2];
 
-        // Compute prefix GCDs
+        prefixGCD[0] = 0;   // GCD identity for prefix (0 means no numbers yet)
+        prefixLCM[0] = 1;   // LCM identity for prefix (1 is neutral for multiplication)
+
+        // Calculate prefix GCD and LCM from left to right
         for (int i = 0; i < n; i++) {
-            pre[i + 1] = gcd(pre[i], nums[i]);
+            prefixGCD[i + 1] = gcd(prefixGCD[i], nums[i]);
+            prefixLCM[i + 1] = lcm(prefixLCM[i], nums[i]);
         }
 
-        // Compute suffix GCDs
+        suffixGCD[n + 1] = 0;  // GCD identity for suffix (beyond the end)
+        suffixLCM[n + 1] = 1;  // LCM identity for suffix (beyond the end)
+
+        // Calculate suffix GCD and LCM from right to left
         for (int i = n - 1; i >= 0; i--) {
-            suf[i + 1] = gcd(suf[i + 2], nums[i]);
+            suffixGCD[i + 1] = gcd(suffixGCD[i + 2], nums[i]);
+            suffixLCM[i + 1] = lcm(suffixLCM[i + 2], nums[i]);
         }
 
-        long max = 0;
+        long maxScore = 0;
 
-        // Try removing each element and compute factor score
+        // Try splitting array at every position i
         for (int i = 0; i < n; i++) {
-            int g = gcd(pre[i], suf[i + 2]); // GCD without nums[i]
-            long l = 1;
-
-            // Compute LCM of the rest of the elements
-            for (int j = 0; j < n; j++) {
-                if (j != i) {
-                    l = lcm(l, nums[j]);
-                }
-            }
-
-            // Update max factor score
-            max = Math.max(max, l * g);
+            // GCD of all elements except nums[i]
+            int g = gcd(prefixGCD[i], suffixGCD[i + 2]);
+            // LCM of all elements except nums[i]
+            long l = lcm(prefixLCM[i], suffixLCM[i + 2]);
+            maxScore = Math.max(maxScore, g * l);  // Update maxScore if bigger found
         }
 
-        // Also consider case without removing any element
-        long fullGCD = nums[0], fullLCM = nums[0];
-        for (int i = 1; i < n; i++) {
-            fullGCD = gcd((int) fullGCD, nums[i]);
-            fullLCM = lcm(fullLCM, nums[i]);
-        }
+        // Also consider the whole array (no removal)
+        maxScore = Math.max(maxScore, (long) prefixGCD[n] * prefixLCM[n]);
 
-        // Return the maximum score
-        return Math.max(max, fullGCD * fullLCM);
+        return maxScore;
     }
 
-    // Euclidean algorithm to find GCD
+    // GCD for int values (used for prefix and suffix GCD arrays)
     static int gcd(int a, int b) {
         return b == 0 ? a : gcd(b, a % b);
     }
 
-    // Function to compute LCM using GCD
+    // Overloaded GCD for long values (used in LCM calculation to avoid overflow)
+    static long gcd(long a, long b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+
+    // Calculate LCM safely using gcd to prevent overflow
     static long lcm(long a, long b) {
-        return a / gcd((int) a, (int) b) * b;
+        return a / gcd(a, b) * b;
     }
 }
