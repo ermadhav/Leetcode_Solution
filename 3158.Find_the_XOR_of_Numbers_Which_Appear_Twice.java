@@ -1,3 +1,5 @@
+import java.util.Set;
+
 class Solution {
     public int duplicateNumbersXOR(int[] nums) {
 int result = 0;
