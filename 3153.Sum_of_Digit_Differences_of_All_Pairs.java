@@ -2,7 +2,7 @@ class Solution {
     public long sumDigitDifferences(int[] nums) {
         int n = nums.length;
         int len = String.valueOf(nums[0]).length();
-        int total = 0;
+        long total = 0;
 
         for (int pos = 0; pos < len; pos++) {
             int[] count = new int[10];
@@ -12,7 +12,7 @@ class Solution {
             }
             for (int i = 0; i < 10; i++) {
                 for (int j = i + 1; j < 10; j++) {
-                    total += count[i] * count[j];
+                    total += (long) count[i] * count[j];
                 }
             }
         }
