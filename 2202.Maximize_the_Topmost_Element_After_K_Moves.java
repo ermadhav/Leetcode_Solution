@@ -21,11 +21,16 @@ class Solution {
             for (int i = 0; i < k - 1; i++) {
                 maxVal = Math.max(maxVal, nums[i]);
             }
-            // Also consider the element at index k (after removing k-1 elements and adding back one)
             maxVal = Math.max(maxVal, nums[k]);
             return maxVal;
+        } else if (k == n) {
+            // We can only reinsert from first n-1
+            for (int i = 0; i < n - 1; i++) {
+                maxVal = Math.max(maxVal, nums[i]);
+            }
+            return maxVal;
         } else {
-            // Case 5: k >= n, we can remove all and put back any of the previous elements
+            // k > n: we can remove all, and still have at least 1 reinsert
             for (int i = 0; i < n; i++) {
                 maxVal = Math.max(maxVal, nums[i]);
             }
