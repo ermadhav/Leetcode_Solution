@@ -1,19 +1,20 @@
 class Solution {
     public int sumOfTheDigitsOfHarshadNumber(int x) {
-        int original = x;  // Store original value
+        int original = x;
         int sum = 0;
 
+        // Special case: if x == 0, sum will be 0, return -1 immediately
+        if (x == 0) {
+            return -1;
+        }
+
+        // Calculate sum of digits
         while (x > 0) {
             sum += x % 10;
             x /= 10;
         }
 
-        // If sum is zero (which can happen if x == 0), avoid division by zero
-        if (sum == 0) {
-            return -1;  // Not a Harshad number
-        }
-
-        // Check divisibility
+        // Check divisibility by sum of digits
         if (original % sum == 0) {
             return sum;
         } else {
