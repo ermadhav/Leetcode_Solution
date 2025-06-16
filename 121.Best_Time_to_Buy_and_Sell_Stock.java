@@ -1,16 +1,18 @@
 class Solution {
-    public int maximumDifference(int[] prices) {
-        int max = -1; // Start with -1 (no valid pair found yet)
-        
-        for(int i = 0; i < prices.length; i++) {
-            for(int j = i + 1; j < prices.length; j++) {
-                // If prices[j] is bigger than prices[i] and difference is larger than max
-                if(prices[i] < prices[j] && prices[j] - prices[i] > max) {
-                    max = prices[j] - prices[i]; // Update max difference
-                }
+    public int maxProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE; // store the minimum price seen so far
+        int maxProfit = 0; // store the maximum profit
+
+        for (int price : prices) {
+            if (price < minPrice) {
+                // if current price is less than minPrice, update minPrice
+                minPrice = price;
+            } else if (price - minPrice > maxProfit) {
+                // if selling at current price gives more profit, update maxProfit
+                maxProfit = price - minPrice;
             }
         }
-        
-        return max; // Return the largest difference found
+
+        return maxProfit; // return the highest profit found
     }
 }
