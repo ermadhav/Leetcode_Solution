@@ -10,7 +10,6 @@ class Solution {
                 break; // Only change one digit
             }
         }
-
         // Convert the updated char array back to an integer
         return Integer.parseInt(new String(digits));
     }
