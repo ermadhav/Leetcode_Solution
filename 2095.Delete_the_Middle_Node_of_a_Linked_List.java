@@ -1,6 +1,6 @@
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
-        // Edge case: if list has only one node, return null
+        // If there's only one node, delete it by returning null
         if (head == null || head.next == null) {
             return null;
         }
@@ -9,16 +9,18 @@ class Solution {
         ListNode fast = head;
         ListNode prev = null;
 
-        // Use two pointers to find the middle node
+        // Find the middle node using slow and fast pointers
         while (fast != null && fast.next != null) {
-            prev = slow;            // track node before slow
-            slow = slow.next;       // move slow by 1
-            fast = fast.next.next;  // move fast by 2
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        // Now, 'slow' is the middle node
-        prev.next = slow.next; // delete the middle node
-        slow.next = null;      // optional: helps garbage collection
+        // Delete the middle node
+        if (prev != null) {
+            prev.next = slow.next;
+            slow.next = null; // optional: help GC
+        }
 
         return head;
     }
