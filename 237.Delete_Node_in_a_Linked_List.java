@@ -1,5 +1,7 @@
+import java.util.List;
+
 class Solution {
-    public void deleteNode(ListNode node) {
+    public void deleteNode(List node) {
         
         // Copy the value of the next node into the current node
         node.val = node.next.val;
