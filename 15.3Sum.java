@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Solution {
     public List<List<Integer>> threeSum(int[] n) {
         Arrays.sort(n); // Sort the array to use two-pointer approach
