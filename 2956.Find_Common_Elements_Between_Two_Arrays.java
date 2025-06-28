@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Solution {
+class Solution {
     public int[] countMatches(int[] nums1, int[] nums2) {
         // Store unique elements of nums1 and nums2
         HashSet<Integer> set1 = new HashSet<>();
