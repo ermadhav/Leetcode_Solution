@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int findLucky(int[] arr) {
         // Create a HashMap to store the frequency of each number
