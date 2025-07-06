@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Map;
+
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> countMap = new HashMap<>();
