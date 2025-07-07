@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 class Solution {
     public int sumOfUnique(int[] nums) {
         HashSet<Integer> seen = new HashSet<>();       // Seen once
