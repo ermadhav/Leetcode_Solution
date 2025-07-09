@@ -1,7 +1,5 @@
 class Solution {
     public int minSwaps(String s) {
-        int balance = 0, maxImbalance = 0;
-
         int balance = 0;   // tracks current balance
         int maxUnbalanced = 0; // tracks max imbalance
 
