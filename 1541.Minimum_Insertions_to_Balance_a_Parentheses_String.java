@@ -1,4 +1,4 @@
-public class Solution {
+class Solution {
 
     // Method to calculate minimum insertions needed to balance the string
     public int minInsertions(String s) {
