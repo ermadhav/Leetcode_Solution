@@ -2,12 +2,21 @@ class Solution {
     public int minSwaps(String s) {
         int balance = 0, maxImbalance = 0;
 
+        int balance = 0;   // tracks current balance
+        int maxUnbalanced = 0; // tracks max imbalance
+
         for (char c : s.toCharArray()) {
-            balance += c == '[' ? 1 : -1;
-            if (balance < 0)
-                maxImbalance = Math.max(maxImbalance, -balance);
+            if (c == '[') {
+                balance++;  // opening bracket adds balance
+            } else {
+                balance--;  // closing bracket reduces balance
+                if (balance < 0) {
+                    maxUnbalanced = Math.max(maxUnbalanced, -balance);
+                }
+            }
         }
 
-        return (maxImbalance + 1) / 2;
+        // Each swap can fix 2 unbalanced brackets
+        return (maxUnbalanced + 1) / 2;
     }
 }
