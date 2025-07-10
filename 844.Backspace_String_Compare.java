@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class Solution {
     public static boolean backspaceCompare(String s, String t) {
         return build(s).equals(build(t)); // Compare final processed forms
