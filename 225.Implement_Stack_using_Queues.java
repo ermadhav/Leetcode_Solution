@@ -1,3 +1,5 @@
+import java.util.Queue;
+
 class MyStack {
     Queue<Integer> q = new LinkedList<>(); // Single queue used to simulate stack
 
