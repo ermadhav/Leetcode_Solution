@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class MyQueue {
     Stack<Integer> st = new Stack<>();      // Main stack
     Stack<Integer> helper = new Stack<>();  // Helper stack for reversal
