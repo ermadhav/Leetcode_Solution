@@ -1,3 +1,5 @@
+import java.util.Set;
+
 class Solution {
     public int countPrimeSetBits(int left, int right) {
         // Set of prime numbers up to 32 (maximum possible set bits in a 32-bit integer)
