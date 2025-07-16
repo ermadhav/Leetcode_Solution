@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Solution {
     public int countPairs(List<Integer> nums, int target) {
         int count = 0; // Initialize a counter to keep track of valid pairs
