@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
@@ -6,7 +7,7 @@ class Solution {
         Map<Integer, Integer> countMap = new HashMap<>();
         for (int card : deck)
             countMap.put(card, countMap.getOrDefault(card, 0) + 1);
-
+        
         // Find GCD of all frequencies
         int gcd = 0;
         for (int count : countMap.values())
