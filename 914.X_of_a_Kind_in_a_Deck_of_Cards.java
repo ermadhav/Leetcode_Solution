@@ -1,6 +1,8 @@
+import java.util.Map;
+
 class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
-         // Count each number's frequency
+        // Count each number's frequency
         Map<Integer, Integer> countMap = new HashMap<>();
         for (int card : deck)
             countMap.put(card, countMap.getOrDefault(card, 0) + 1);
