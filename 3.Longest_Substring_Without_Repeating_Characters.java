@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>(); // To store unique characters in the current window
