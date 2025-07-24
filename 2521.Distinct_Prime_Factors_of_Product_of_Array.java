@@ -3,8 +3,6 @@ import java.util.Set;
 
 class Solution {
     public int distinctPrimeFactors(int[] nums) {
-        // Function to count distinct prime factors in the product of nums
-    public static int countDistinctPrimeFactors(int[] nums) {
         Set<Integer> factors = new HashSet<>();  // To store unique prime factors
         
         // For each number in the array
