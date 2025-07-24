@@ -1,5 +1,7 @@
 class Solution {
     public int[] closestDivisors(int num) {
+        int a = num+1;
+        int b = num+2;
         // Start from sqrt(b) and go down to 1 to find closest factors
         for (int i = (int)Math.sqrt(b); i >= 1; i--) {
             // If i divides a, return the factor pair (i, a/i)
