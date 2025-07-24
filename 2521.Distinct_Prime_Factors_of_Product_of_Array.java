@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 class Solution {
     public int distinctPrimeFactors(int[] nums) {
         // Function to count distinct prime factors in the product of nums
