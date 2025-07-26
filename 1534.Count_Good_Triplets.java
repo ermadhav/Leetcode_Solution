@@ -1,7 +1,6 @@
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int count = 0; // Initialize counter for good triplets
-
         // Iterate through all possible triplets with i < j < k
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
