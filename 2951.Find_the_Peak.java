@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public List<Integer> findPeaks(int[] mountain) {
         // Create a list to store the indices of peak elements
