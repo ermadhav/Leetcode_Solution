@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public List<Integer> minSubsequence(int[] nums) {
         // Step 1: Sort the array in ascending order
