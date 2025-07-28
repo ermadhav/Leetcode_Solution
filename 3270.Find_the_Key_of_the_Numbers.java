@@ -3,8 +3,8 @@ class Solution {
         // Convert each number into a 4-digit string
         // Example: 523 -> "0523", 678 -> "0678"
         String s1 = String.format("%04d", num1),
-               s2 = String.format("%04d", num2),
-               s3 = String.format("%04d", num3);
+                s2 = String.format("%04d", num2),
+                s3 = String.format("%04d", num3);
 
         // To build the resulting key digit by digit
         StringBuilder key = new StringBuilder();
@@ -14,9 +14,8 @@ class Solution {
             // Find the smallest digit at the current position
             // among s1, s2, and s3
             char minDigit = (char) Math.min(
-                                s1.charAt(i),
-                                Math.min(s2.charAt(i), s3.charAt(i))
-                            );
+                    s1.charAt(i),
+                    Math.min(s2.charAt(i), s3.charAt(i)));
 
             // Append the smallest digit to the key
             key.append(minDigit);
