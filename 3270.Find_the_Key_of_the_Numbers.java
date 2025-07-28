@@ -2,9 +2,9 @@ class Solution {
     public int generateKey(int num1, int num2, int num3) {
         // Convert each number into a 4-digit string
         // Example: 523 -> "0523", 678 -> "0678"
-        String s1 = String.format("%04d", a),
-               s2 = String.format("%04d", b),
-               s3 = String.format("%04d", c);
+        String s1 = String.format("%04d", num1),
+               s2 = String.format("%04d", num2),
+               s3 = String.format("%04d", num3);
 
         // To build the resulting key digit by digit
         StringBuilder key = new StringBuilder();
