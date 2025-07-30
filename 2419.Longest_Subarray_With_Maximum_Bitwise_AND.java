@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public int longestSubarray(int[] nums) {
         // List to store the bitwise AND values of all subarrays
