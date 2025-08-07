@@ -1,4 +1,4 @@
-public class Solution {
+class Solution {
     public int reinitializePermutation(int n) {
         int pos = 1;    // Track the position of index 1 after operations
         int count = 0;  // Count the number of operations
