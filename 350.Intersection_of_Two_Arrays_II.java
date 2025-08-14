@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         // Store frequency of each number in nums1
