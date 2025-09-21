@@ -1,3 +1,5 @@
+import javax.swing.tree.TreeNode;
+
 class Solution {
     public int countNodes(TreeNode root) {
         if (root == null) return 0; // empty tree
