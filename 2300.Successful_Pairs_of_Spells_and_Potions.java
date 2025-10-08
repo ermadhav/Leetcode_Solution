@@ -6,15 +6,25 @@ class Solution {
         
         for (int i = 0; i < n; i++) {
             // Minimum potion strength needed for this spell to succeed
-            long need = (success + spells[i] - 1) / spells[i]; 
+            long need = (success + spells[i] - 1) / spells[i];
             
-            // Find the first potion >= need using binary search
-            int idx = Arrays.binarySearch(potions, (int) need);
-            if (idx < 0) idx = -idx - 1; // Convert to insertion point if not found
+            // Find first potion >= need using binary search (manual to handle long)
+            int idx = lowerBound(potions, need);
             
-            // Count potions that form successful pairs
+            // Number of successful pairs for this spell
             res[i] = m - idx;
         }
-        return res; // Return result array
+        return res;
+    }
+
+    // Helper function to find the first index with potions[idx] >= need
+    private int lowerBound(int[] potions, long need) {
+        int left = 0, right = potions.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (potions[mid] < need) left = mid + 1;
+            else right = mid;
+        }
+        return left;
     }
 }
