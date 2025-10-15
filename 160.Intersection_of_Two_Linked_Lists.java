@@ -1,6 +1,7 @@
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null)
+            return null;
 
         ListNode pA = headA;
         ListNode pB = headB;
@@ -12,7 +13,6 @@ public class Solution {
             pB = (pB == null) ? headA : pB.next;
         }
 
-        // Either intersection node or null
         return pA;
     }
 }
