@@ -6,7 +6,6 @@ public class Solution {
         ListNode pA = headA;
         ListNode pB = headB;
 
-        // Traverse both lists
         while (pA != pB) {
             // Move to next node or switch head
             pA = (pA == null) ? headB : pA.next;
