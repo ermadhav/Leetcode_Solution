@@ -14,4 +14,4 @@ class Solution {
         // No such number found
         return -1;
     }
-}
+
