@@ -1,3 +1,5 @@
+import javax.swing.tree.TreeNode;
+
 class Solution {
     public boolean checkTree(TreeNode root) {
         // Leetcode Prob No:- 2236
