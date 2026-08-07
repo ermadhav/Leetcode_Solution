@@ -11,19 +11,18 @@ class Solution {
         int[] ans = new int[friends.length];
         int index = 0;
 
-        // Race ke order ko ek-ek karke dekho
+        // Race ka order 
         for (int racer : order) {
 
             // Agar racer friend hai
             if (set.contains(racer)) {
 
-                // Answer me add kar do
+                
                 ans[index] = racer;
                 index++;
             }
         }
 
-        // Final answer return karo
         return ans;
     }
 }
