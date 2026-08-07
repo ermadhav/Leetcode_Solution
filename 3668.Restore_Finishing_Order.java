@@ -7,7 +7,7 @@ class Solution {
             set.add(friend);
         }
 
-        // Answer store karne ke liye array
+        // Used to Store Ans
         int[] ans = new int[friends.length];
         int index = 0;
 
