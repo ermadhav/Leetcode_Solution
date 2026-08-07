@@ -1,9 +1,7 @@
-import java.util.*;
-
 class Solution {
     public int[] recoverOrder(int[] order, int[] friends) {
 
-        // Friends ko HashSet me store kar do
+        // Friends ko HashSet me store karna hai 
         HashSet<Integer> set = new HashSet<>();
         for (int friend : friends) {
             set.add(friend);
