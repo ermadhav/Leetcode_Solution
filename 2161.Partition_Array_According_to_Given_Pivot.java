@@ -4,6 +4,7 @@ class Solution {
         ArrayList<Integer> a2 = new ArrayList<>();
         ArrayList<Integer> a3 = new ArrayList<>();
         ArrayList<Integer> ans = new ArrayList<>();
+        
          // Array ko 3 parts mein divide karo
         for(int i=0; i<nums.length; i++){
             if(nums[i]<pivot){
