@@ -7,11 +7,17 @@ class Solution {
 
          // Array ko 3 parts mein divide karo
         for(int i=0; i<nums.length; i++){
+
             if(nums[i]<pivot){// pivot se chhote
+
                 a1.add(nums[i]);
+
             }else if(nums[i] == pivot){// pivot ke euqal
+
                 a2.add(nums[i]);
-            }else{
+                
+            }else{// pivot se bade
+
                 a3.add(nums[i]);
             }
         }
