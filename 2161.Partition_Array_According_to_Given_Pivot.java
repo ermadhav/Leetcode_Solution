@@ -15,16 +15,20 @@ class Solution {
             }else if(nums[i] == pivot){// pivot ke euqal
 
                 a2.add(nums[i]);
-                
+
             }else{// pivot se bade
 
                 a3.add(nums[i]);
             }
         }
+
+         // Teeno parts ko combine kara h
         ans.addAll(a1);
         ans.addAll(a2);
         ans.addAll(a3);
 
+        // ArrayList<Integer> -> int[]
+        
         int[] result = new int[ans.size()];
         for(int i=0; i<ans.size(); i++){
             result[i] = ans.get(i);
