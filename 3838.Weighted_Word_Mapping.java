@@ -3,8 +3,13 @@ class Solution {
         
         StringBuilder ans = new StringBuilder();
 
+        // Process every word
         for(String word : words){
+
+
             int sum =0;
+
+            //add weights of every word
             for(char ch : word.toCharArray()){
 
                 int index = ch - 'a';
@@ -13,6 +18,8 @@ class Solution {
             }
 
             int value = sum % 26;
+
+            //reverse alphabet mapping 
             char mapped = (char)('a' + (25 - value));
             ans.append(mapped);
         }
