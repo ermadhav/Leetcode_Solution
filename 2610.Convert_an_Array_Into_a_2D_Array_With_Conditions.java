@@ -15,7 +15,8 @@ class Solution {
             if(ans.size() < freq[num]){
                 ans.add(new ArrayList<>());
             }
-            
+
+            // no. ko appropriate row me add karo
             ans.get(freq[num] - 1).add(num);
         }
         return ans;
