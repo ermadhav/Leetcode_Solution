@@ -20,6 +20,7 @@ class Solution {
                 ans += maxH - grid[i][j];
             }
         }
+        
         return ans;
     }
 }
