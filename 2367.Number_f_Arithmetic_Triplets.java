@@ -2,6 +2,8 @@ class Solution {
     public int arithmeticTriplets(int[] nums, int diff) {
         HashSet<Integer> set = new HashSet<>();
 
+        // Add every number of array to the set
+
         for(int num: nums){
             set.add(num);
         }
