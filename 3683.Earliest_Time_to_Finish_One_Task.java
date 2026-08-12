@@ -10,7 +10,6 @@ class Solution {
             // Finish time = start time + duration
             int finishTime = task[0]+task[1];
 
-            // Update minimum finish time
             min = Math.min(min, finishTime);
         }
         return min;
