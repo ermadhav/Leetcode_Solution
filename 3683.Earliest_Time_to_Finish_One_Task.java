@@ -5,10 +5,10 @@ class Solution {
         int min = Integer.MAX_VALUE;
 
         // Check each task
-        for(int[] task:tasks){
+        for (int[] task : tasks) {
 
             // Finish time = start time + duration
-            int finishTime = task[0]+task[1];
+            int finishTime = task[0] + task[1];
 
             min = Math.min(min, finishTime);
         }
