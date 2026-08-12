@@ -10,7 +10,10 @@ class Solution {
 
         int count = 0;
 
+        // har no. ko triplet ke starting element se compare kara hai
         for(int num:nums){
+
+            
             if(set.contains(num+diff) && set.contains(num+2*diff)){
                 count++;
             }
