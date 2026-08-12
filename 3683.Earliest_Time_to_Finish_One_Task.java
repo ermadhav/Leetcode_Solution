@@ -1,7 +1,7 @@
 class Solution {
     public int earliestTime(int[][] tasks) {
 
-        // Store the minimum finishing time
+        // minimum finishing time ko store kara hai
         int min = Integer.MAX_VALUE;
 
         // Check each task
