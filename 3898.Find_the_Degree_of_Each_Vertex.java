@@ -7,6 +7,8 @@ class Solution {
 
             // row ke har element ko 
             for(int j=0; j<matrix.length; j++){
+
+                // if an edge exists incrs the degree
                 if(matrix[i][j] == 1){
                     ans[i]++;
                 }
