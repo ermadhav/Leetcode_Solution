@@ -17,7 +17,7 @@ class Solution {
 
 
             l++; // incrs left
-            r--;
+            r--; // decrs right
         }
         return new String(arr);
     }
