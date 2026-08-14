@@ -4,11 +4,13 @@ class Solution {
         // converted String into Char Array
         char[] arr = s.toCharArray();
 
-        int l = 0;
-        int r = k - 1;
+
+        int l = 0; // left
+        int r = k - 1; // right = k-1 (0-Indexed)
 
         while (l < r) {
 
+            // swapping
             char temp = arr[l];
             arr[l] = arr[r];
             arr[r] = temp;
