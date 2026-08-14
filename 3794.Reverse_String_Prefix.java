@@ -14,7 +14,9 @@ class Solution {
             char temp = arr[l];
             arr[l] = arr[r];
             arr[r] = temp;
-            l++;
+
+
+            l++; // incrs left
             r--;
         }
         return new String(arr);
