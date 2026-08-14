@@ -19,6 +19,8 @@ class Solution {
             l++; // incrs left
             r--; // decrs right
         }
+
+        // returning the arr in string 
         return new String(arr);
     }
 }
