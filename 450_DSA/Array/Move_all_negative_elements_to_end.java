@@ -3,13 +3,15 @@ class Solution {
 
         // creating same size array 
 		int[] temp = new int[arr.length];
+
+        // k tells where to insert the element
 		int k = 0;
 
         // firstly storing the +ves and 0s
 		for (int i = 0; i<arr.length; i++) {
 			if (arr[i] >= 0) {
 				temp[k] = arr[i];
-				k++;
+				k++; // move k to next empty index
 			}
 		}
 
@@ -20,6 +22,8 @@ class Solution {
 				k++;
 			}
 		}
+
+        // again copying the same temp in to arr because quesion demands
 		for(int i=0; i<arr.length; i++){
 		    arr[i] = temp[i];
 		}
