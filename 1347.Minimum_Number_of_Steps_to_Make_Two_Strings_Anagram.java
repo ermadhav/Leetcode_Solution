@@ -7,7 +7,7 @@ class Solution {
             freq[ch - 'a']++;
         }
 
-        // count the char of s  
+        // count the char of t 
         for(char ch: t.toCharArray()){
             freq[ch - 'a']--;
         }
