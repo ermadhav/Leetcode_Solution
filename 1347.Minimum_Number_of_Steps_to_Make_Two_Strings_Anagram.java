@@ -13,9 +13,9 @@ class Solution {
         }
 
 
-        int steps = 0;
+        int steps = 0; // count the no. of minimum replacements 
 
-        // T ke missing character ko count karna 
+        // T ke missing character ko count karna ( +ve values extra hai s me) 
         for(int count:freq){
             if(count > 0){
                 steps += count;
