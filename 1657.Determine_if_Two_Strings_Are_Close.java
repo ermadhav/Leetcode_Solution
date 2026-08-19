@@ -29,7 +29,6 @@ class Solution {
 
         // freq sort taki   patter ko compare kar sake
         Arrays.sort(freq1);
-        
         Arrays.sort(freq2);
 
 
