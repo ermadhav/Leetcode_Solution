@@ -1,6 +1,7 @@
 class Solution {
     public boolean closeStrings(String word1, String word2) {
 
+        // strings must have the same length
         if(word1.length() != word2.length()){
             return false;
         }
