@@ -31,7 +31,7 @@ class Solution {
         Arrays.sort(freq1);
         Arrays.sort(freq2);
 
-
+        // if feq equal they are equal
         return Arrays.equals(freq1, freq2);
     }
 }
