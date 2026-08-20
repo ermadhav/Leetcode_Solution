@@ -7,6 +7,8 @@ class Solution {
         if(s.length() != goal.length()){
             return false;
         }
+
+        // find the index where strings are diff
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) != goal.charAt(i)){
                 if(first == -1){
