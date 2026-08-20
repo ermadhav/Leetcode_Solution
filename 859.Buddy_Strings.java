@@ -26,6 +26,10 @@ class Solution {
                 }
             }
         }
+
+        // strings are already equal
+        // We need at least one duplicate character to swap and still keep the string unchanged
+
         if(first == -1){
             int[] freq = new int[26];
             for(char ch: s.toCharArray()){
@@ -34,6 +38,7 @@ class Solution {
                     return true;
                 }
             }
+            // No duplicate character, so no valid swap is possible
             return false;
         }
         if(second == -1){
