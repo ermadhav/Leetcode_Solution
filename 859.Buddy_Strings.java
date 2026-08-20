@@ -41,9 +41,15 @@ class Solution {
             // No duplicate character, so no valid swap is possible
             return false;
         }
+
+        // Only one mismatch cannot be fixed by swapping two characters
         if(second == -1){
             return false;
         }
+
+        // Check whether swapping the two mismatched characters
+        // in s will make it equal to goal
+
         boolean ans = s.charAt(first) == goal.charAt(second) && s.charAt(second) == goal.charAt(first);
         return ans;
     }
