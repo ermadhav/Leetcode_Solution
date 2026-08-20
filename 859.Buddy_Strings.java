@@ -11,10 +11,16 @@ class Solution {
         // find the index where strings are diff
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) != goal.charAt(i)){
+
+                // store 1st mismatch
                 if(first == -1){
                     first = i;
+
+                // store 2nd mismatch
                 }else if(second == -1){
                     second = i;
+
+                // more then two
                 }else{
                     return false;
                 }
