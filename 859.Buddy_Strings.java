@@ -47,8 +47,7 @@ class Solution {
             return false;
         }
 
-        // Check whether swapping the two mismatched characters
-        // in s will make it equal to goal
+        // Check whether swapping the two mismatched characters in s will make it equal to goal
 
         boolean ans = s.charAt(first) == goal.charAt(second) && s.charAt(second) == goal.charAt(first);
         return ans;
