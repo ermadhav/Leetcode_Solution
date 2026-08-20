@@ -2,6 +2,8 @@ class Solution {
     public boolean buddyStrings(String s, String goal) {
         int first = -1;
         int second = -1;
+
+        // lengths diff, can never be buddy
         if(s.length() != goal.length()){
             return false;
         }
