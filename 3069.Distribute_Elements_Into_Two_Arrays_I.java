@@ -3,6 +3,7 @@ class Solution {
         List<Integer> arr1 = new ArrayList<>();
         List<Integer> arr2 = new ArrayList<>();
 
+        // First two elements are fixed
         arr1.add(nums[0]);
         arr2.add(nums[1]);
 
@@ -14,6 +15,7 @@ class Solution {
             }
         }
 
+        // arr1 + arr2
         int[] result = new int[nums.length];
         int index =0;
         for(int num:arr1) {
