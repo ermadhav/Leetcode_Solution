@@ -7,6 +7,7 @@ class Solution {
         arr1.add(nums[0]);
         arr2.add(nums[1]);
 
+        // Distribute remaining elements
         for(int i=2; i<nums.length; i++) {
             if (arr1.get(arr1.size()-1) > arr2.get(arr2.size()-1)) {
                 arr1.add(nums[i]);
