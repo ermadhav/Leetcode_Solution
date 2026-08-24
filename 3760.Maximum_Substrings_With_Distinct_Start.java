@@ -14,7 +14,7 @@ class Solution {
                 // mark seen
                 seen[c-'a'] = true;
 
-                // 
+                // incrs distinct char
                 count++;
             }
         }
