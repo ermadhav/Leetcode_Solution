@@ -7,6 +7,7 @@ class Solution {
             set.add(nums[i]);
         }
 
+        // Sabse pehla multiple k se start hoga
         int multiple = k;
         while(set.contains(multiple)){
             multiple += k ;
