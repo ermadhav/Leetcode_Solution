@@ -1,7 +1,7 @@
 class Solution {
     public int balancedStringSplit(String s) {
-        int balance = 0;
-        int count = 0;
+        int balance = 0; // l or r ka balnc track karega
+        int count = 0; // kitne balance vo 
         for(char c: s.toCharArray()){
             if(c == 'L'){
                 balance++;
