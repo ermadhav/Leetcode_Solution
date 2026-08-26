@@ -8,7 +8,7 @@ class Solution {
             }else{
                 balance--;
             }
-
+            // jab l or r == ho to 1 substring mil gayi
             if(balance == 0){
                 count++;
             }
