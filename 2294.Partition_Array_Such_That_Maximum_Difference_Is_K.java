@@ -13,6 +13,8 @@ class Solution {
         for(int i=1; i<nums.length; i++){
             if(nums[i] - start>k){
                 count++;
+
+                // New subsequence ka starting element
                 start = nums[i];
             }
         }
