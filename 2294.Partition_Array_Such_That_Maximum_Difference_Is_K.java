@@ -1,6 +1,8 @@
 class Solution {
     public int partitionArray(int[] nums, int k) {
         Arrays.sort(nums);
+
+        // Kam se kam ek subsequence hoga
         int count =1;
         int start =nums[0];
 
