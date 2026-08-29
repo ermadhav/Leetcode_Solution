@@ -10,6 +10,7 @@ class Solution {
             while(nums[i] - nums[left] > 2*k){
                 left++;
             }
+            // Current valid window ki maximum length calculate karo
             ans = Math.max(ans, i-left+1);
         }
         return ans;
