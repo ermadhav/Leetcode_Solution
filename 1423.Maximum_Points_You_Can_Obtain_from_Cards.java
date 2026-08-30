@@ -21,7 +21,10 @@ class Solution {
         // Sliding window use karke minimum sum find kar rahe hain
 
         for (int i = cardPoints.length - k; i < cardPoints.length; i++) {
+
+            // Window mein new element add karo
             subSum += cardPoints[i];
+            
             subSum -= cardPoints[i - (cardPoints.length - k)];
             min = Math.min(min, subSum);
         }
