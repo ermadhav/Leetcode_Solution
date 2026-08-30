@@ -7,6 +7,10 @@ class Solution {
         for(int i=0; i<cardPoints.length; i++){
             sum += cardPoints[i];
         }
+
+        // N = cardPoints.length
+        // Hume N-k cards ko remove/leave karna hai
+        // Starting window ka sum calculate kar rahe hain
         for(int i=0; i<cardPoints.length-k; i++){
             subSum += cardPoints[i];
         }
