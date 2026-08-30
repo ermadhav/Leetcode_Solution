@@ -19,7 +19,7 @@ class Solution {
        int left = Math.min(min, max); 
        int right = Math.max(min, max);
 
-       // Dono ko front se remove karne ki deletions
+       // Dono ko front or back se remove karne ki deletions
        int front = right + 1;
        int back = nums.length - left;
        int eachSide = (left+1) + (nums.length-right);
