@@ -14,7 +14,7 @@ class Solution {
             max = i;
         }
        }
-       int left = Math.min(min, max);
+       int left = Math.min(min, max);  // Dono indexes me left wala find karo
        int right = Math.max(min, max);
        int front = right + 1;
        int back = nums.length - left;
