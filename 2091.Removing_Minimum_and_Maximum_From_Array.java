@@ -22,6 +22,8 @@ class Solution {
        // Dono ko front or back se remove karne ki deletions
        int front = right + 1;
        int back = nums.length - left;
+
+       // Ek element front se aur ek back se remove karo
        int eachSide = (left+1) + (nums.length-right);
 
        return Math.min(eachSide, Math.min(front, back));
