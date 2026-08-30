@@ -5,6 +5,7 @@ class Solution {
        int min = 0;
        int max = 0;
 
+       // find the max and min index 
        for(int i=1; i<nums.length; i++){
         if(nums[i] < nums[min]){
             min = i;
