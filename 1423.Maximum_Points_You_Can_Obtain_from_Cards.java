@@ -24,7 +24,7 @@ class Solution {
 
             // Window mein new element add karo
             subSum += cardPoints[i];
-            
+            // Window se purana element remove karo
             subSum -= cardPoints[i - (cardPoints.length - k)];
             min = Math.min(min, subSum);
         }
