@@ -26,6 +26,7 @@ class Solution {
        // Ek element front se aur ek back se remove karo
        int eachSide = (left+1) + (nums.length-right);
 
+       // Teeno cases me minimum deletions return karo
        return Math.min(eachSide, Math.min(front, back));
     }
 }
