@@ -1,5 +1,7 @@
 class Solution {
     public int minimumDeletions(int[] nums) {
+
+        // used to store the index of min and max
        int min = 0;
        int max = 0;
 
