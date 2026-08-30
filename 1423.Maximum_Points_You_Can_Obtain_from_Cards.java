@@ -14,6 +14,8 @@ class Solution {
         for(int i=0; i<cardPoints.length-k; i++){
             subSum += cardPoints[i];
         }
+
+        // Pehli window ko minimum maan rahe hain
         int min = subSum;
         for(int i = cardPoints.length-k; i<cardPoints.length; i++){
             subSum += cardPoints[i];
