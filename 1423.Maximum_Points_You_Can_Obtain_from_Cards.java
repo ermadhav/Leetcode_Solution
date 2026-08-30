@@ -29,6 +29,9 @@ class Solution {
             // Minimum window sum update karo
             min = Math.min(min, subSum);
         }
+
+        // Total sum - minimum remaining window
+        // = maximum score of k cards
         return sum - min;
     }
 }
