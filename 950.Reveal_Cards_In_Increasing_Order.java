@@ -8,11 +8,11 @@ class Solution {
         }
         for(int card: deck){
             int index = q.poll();
-            ans[index] = card;
+            result[index] = card;
             if(!q.isEmpty()){
                 q.add(q.poll());
             }
         }
-        return ans;
+        return result;
     }
 }
