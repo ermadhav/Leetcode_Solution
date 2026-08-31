@@ -12,8 +12,11 @@ class Solution {
         }
         // Smallest card se start karke positions fill karo
         for(int card: deck){
+            // Queue se next position nikalo
             int index = q.poll();
+            // Us position par current card rakho
             result[index] = card;
+            // Next position ko queue ke end mein bhejo
             if(!q.isEmpty()){
                 q.add(q.poll());
             }
