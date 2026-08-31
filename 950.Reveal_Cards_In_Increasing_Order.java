@@ -1,6 +1,8 @@
 class Solution {
     public int[] deckRevealedIncreasing(int[] deck) {
         int[] result = new int[deck.length];
+
+        // Queue mein array ke indices store karenge
         Queue<Integer> q = new LinkedList<>();
         Arrays.sort(deck);
         for(int i = 0; i < deck.length; i++){
