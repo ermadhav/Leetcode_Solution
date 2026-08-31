@@ -4,6 +4,7 @@ class Solution {
 
         // Queue mein array ke indices store karenge
         Queue<Integer> q = new LinkedList<>();
+         // Cards ko increasing order mein sort karo
         Arrays.sort(deck);
         for(int i = 0; i < deck.length; i++){
             q.add(i);
