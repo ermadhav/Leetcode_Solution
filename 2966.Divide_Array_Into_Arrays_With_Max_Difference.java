@@ -11,6 +11,7 @@ class Solution {
             if(nums[i+2]-nums[i]>k){
                 return new int[0][0]; // return emoty array
             }
+            // Current 3 elements ko answer mein store karo
             ans[i/3][0] = nums[i];
             ans[i/3][1] = nums[i+1];
             ans[i/3][2] = nums[i+2];
