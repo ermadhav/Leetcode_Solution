@@ -7,8 +7,7 @@ class Solution {
         // Har baar 3 elements ko ek group mein lenge
         for(int i=0; i<nums.length; i +=3){
 
-            // Group ke smallest aur largest element ka difference check karo
-            // Agar difference k se bada hai, toh valid group nahi ban sakta
+            // Group ke smallst aur largst element ka difference check karenge agar difference k se bada hai, toh valid group nahi ban sakta
             if(nums[i+2]-nums[i]>k){
                 return new int[0][0];
             }
