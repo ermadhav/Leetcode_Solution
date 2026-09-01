@@ -9,7 +9,7 @@ class Solution {
 
             // Group ke smallst aur largst element ka difference check karenge agar difference k se bada hai, toh valid group nahi ban sakta
             if(nums[i+2]-nums[i]>k){
-                return new int[0][0];
+                return new int[0][0]; // return emoty array
             }
             ans[i/3][0] = nums[i];
             ans[i/3][1] = nums[i+1];
