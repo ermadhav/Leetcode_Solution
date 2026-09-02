@@ -13,6 +13,8 @@ class Solution {
                 nums[i] = nums[i]/10;
                 digits++; // incrs the count
             }
+
+            // if digit is even icrs the count
             if(digits%2 == 0){
                 count++;
             }
