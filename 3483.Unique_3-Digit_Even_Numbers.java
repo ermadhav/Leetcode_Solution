@@ -5,6 +5,8 @@ class Solution {
 
         // store the unique numbers
         Set<Integer> set = new HashSet<>();
+
+        // three loops to pick random three digits which follows the criteria too
         for(int i=0; i<l; i++){
             for(int j=0; j<l; j++){
                 for(int k=0; k<l; k++){
@@ -14,6 +16,8 @@ class Solution {
                 }
             }
         }
+
+        // set size is the ans
         return set.size();
     }
 }
