@@ -1,7 +1,8 @@
 class Solution {
     public int findNumbers(int[] nums) {
         
-        int count =0;
+        int count =0; // stores cout of no. have even digits
+        
         for(int i=0; i<nums.length; i++){
             int digits =0;
             while(nums[i] != 0){
