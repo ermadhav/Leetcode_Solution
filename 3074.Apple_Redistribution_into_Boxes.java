@@ -16,6 +16,8 @@ class Solution {
         for(int i= capacity.length-1; i>=0; i--){
             cap += capacity[i]; // add curr box capicity
             count++; // count the seletced box
+
+            // if box can occupy all the box return count;
             if(cap >= num){
                 return count;
             }
