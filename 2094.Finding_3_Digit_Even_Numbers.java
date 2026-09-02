@@ -1,6 +1,7 @@
 class Solution {
     public int[] findEvenNumbers(int[] digits) {
         int l =  digits.length;
+        // Index for inserting elements into the result array
         int index = 0;
         Set<Integer> set = new HashSet<>();
         for(int i=0; i<l; i++){
