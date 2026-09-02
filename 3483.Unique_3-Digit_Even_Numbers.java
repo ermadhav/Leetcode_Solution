@@ -1,6 +1,9 @@
 class Solution {
     public int totalNumbers(int[] digits) {
+
         int l = digits.length;
+
+        // store the unique numbers
         Set<Integer> set = new HashSet<>();
         for(int i=0; i<l; i++){
             for(int j=0; j<l; j++){
