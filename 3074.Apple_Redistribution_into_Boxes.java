@@ -15,7 +15,7 @@ class Solution {
         // start from biggest box and add one by one 
         for(int i= capacity.length-1; i>=0; i--){
             cap += capacity[i]; // add curr box capicity
-            count++;
+            count++; // count the seletced box
             if(cap >= num){
                 return count;
             }
