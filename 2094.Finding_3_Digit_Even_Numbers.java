@@ -3,6 +3,8 @@ class Solution {
         int l =  digits.length;
         // Index for inserting elements into the result array
         int index = 0;
+
+        // will be used to avoid duplicate
         Set<Integer> set = new HashSet<>();
         for(int i=0; i<l; i++){
             for(int j=0; j<l; j++){
