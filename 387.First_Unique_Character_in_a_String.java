@@ -15,7 +15,7 @@ class Solution {
                 return i;
             }
         }
-        // not then -1
+        
         return -1;
     }
 }
