@@ -4,7 +4,7 @@ class Solution {
         // store char and its freq
         HashMap<Character ,Integer> map = new HashMap<>();
 
-        
+        // count the freq of char
         for(char ch : s.toCharArray()){
             map.put(ch, map.getOrDefault(ch, 0)+1);
         }
