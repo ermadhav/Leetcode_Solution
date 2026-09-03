@@ -7,7 +7,7 @@ class Solution {
         while(i<players.length && j< trainers.length){
             if(players[i] <= trainers[j]){
                     count++; // if matches incrs the count by 1;
-                    // incrs the i and j too
+                    // incrs the i and j too for the next player and trainer
                     i++;
                     j++;
             }else{
