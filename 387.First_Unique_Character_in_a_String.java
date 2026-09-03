@@ -1,6 +1,8 @@
 class Solution {
     public int firstUniqChar(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
+
+        // used to count the char and its freq
         for( char ch: s.toCharArray()){
             map.put(ch, map.getOrDefault(ch, 0)+1);
         }
