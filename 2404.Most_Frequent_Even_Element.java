@@ -18,6 +18,7 @@ class Solution {
             int num = entry.getKey();
             int freq = entry.getValue();
 
+            // Higher frequency OR same frequency with smaller number
             if(freq > maxFreq || (freq == maxFreq && num < ans)){
                 maxFreq = freq;
                 ans = num;
