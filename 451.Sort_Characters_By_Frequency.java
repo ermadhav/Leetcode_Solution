@@ -16,8 +16,9 @@ class Solution {
         list.sort((a,b) -> map.get(b) - map.get(a));
         String ans = "";
 
-        // 
+        // add each char into string
         for(char ch : list){
+            // repeat the char freq times 
             for(int i=0; i<map.get(ch); i++){
                 ans += ch;
             }
