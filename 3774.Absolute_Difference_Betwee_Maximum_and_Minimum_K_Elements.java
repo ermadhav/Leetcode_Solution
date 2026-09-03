@@ -16,6 +16,7 @@ class Solution {
         for(int i=l-1; i>l-k-1; i--){
             max += nums[i];
         }
+
         return Math.abs(max-min);
     }
 }
