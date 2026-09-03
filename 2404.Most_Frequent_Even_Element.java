@@ -21,6 +21,8 @@ class Solution {
             // Higher frequency OR same frequency with smaller number
             if(freq > maxFreq || (freq == maxFreq && num < ans)){
                 maxFreq = freq;
+
+                // update ans
                 ans = num;
             }
         }
