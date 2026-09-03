@@ -11,8 +11,12 @@ class Solution {
 
         // store all unique char in list
         List<Character> list = new ArrayList<>(map.keySet());
+
+        // sort char by freq 
         list.sort((a,b) -> map.get(b) - map.get(a));
         String ans = "";
+
+        // 
         for(char ch : list){
             for(int i=0; i<map.get(ch); i++){
                 ans += ch;
