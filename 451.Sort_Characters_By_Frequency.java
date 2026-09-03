@@ -1,6 +1,10 @@
 class Solution {
     public String frequencySort(String s) {
+
+        // store char and its freq
         HashMap<Character ,Integer> map = new HashMap<>();
+
+        
         for(char ch : s.toCharArray()){
             map.put(ch, map.getOrDefault(ch, 0)+1);
         }
