@@ -11,7 +11,7 @@ class Solution {
                     i++;
                     j++;
             }else{
-                    j++;
+                    j++; // change the trainer without changing the player
             }
         }
         return count;
