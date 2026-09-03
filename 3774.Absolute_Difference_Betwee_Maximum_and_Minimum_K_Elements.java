@@ -7,7 +7,7 @@ class Solution {
 
         int l = nums.length;
 
-        // get the min 
+        // get the min from 0 to k
         for(int i=0; i<k; i++){
             min += nums[i];
         }
