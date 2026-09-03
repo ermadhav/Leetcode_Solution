@@ -6,9 +6,13 @@ class Solution {
         int min =0; // sotre the min
 
         int l = nums.length;
+
+        // get the min 
         for(int i=0; i<k; i++){
             min += nums[i];
         }
+
+        // get max from last to till k from the last
         for(int i=l-1; i>l-k-1; i--){
             max += nums[i];
         }
