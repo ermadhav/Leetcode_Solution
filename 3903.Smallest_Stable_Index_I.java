@@ -12,6 +12,8 @@ class Solution {
         // Starting values initialize kar rahe hain
         max[0] = nums[0];
         min[l-1] = nums[l-1];
+
+        // Prefix maximum array bana rahe hain
         for(int i=0; i<l; i++){
             max[i] = Math.max(max[i-1], nums[i]);
         }
