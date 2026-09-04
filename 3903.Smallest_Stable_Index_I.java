@@ -17,6 +17,7 @@ class Solution {
         for(int i=0; i<l; i++){
             max[i] = Math.max(max[i-1], nums[i]);
         }
+        // Suffix minimum array bana rahe hain
         for(int i=l-2; i>=0; i--){
             max[i] = Math.min(min[i+1], nums[i]);
         }
