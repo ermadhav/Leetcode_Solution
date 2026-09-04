@@ -1,3 +1,5 @@
+// Approach ---> 1
+
 import java.util.*;
 
 public class Solution {
@@ -34,5 +36,33 @@ public class Solution {
         int[] result = sol.frequencySort(nums);
 
         System.out.println(Arrays.toString(result));
+    }
+}
+
+// Approach ---> 2 
+
+class Solution {
+    public int[] frequencySort(int[] nums) {
+        HashMap<Integer ,Integer> map = new HashMap<>();
+        for(int n: nums){
+            map.put(n, map.getOrDefault(n, 0)+1);
+        }
+        List<Integer> list = new ArrayList<>(map.keySet());
+        list.sort((a,b) -> {
+            if(!map.get(b).equals(map.get(a))){
+                return map.get(a) - map.get(b);
+            }else{
+                return b-a;
+            }
+        });
+
+        int[] ans = new int[nums.length];
+        int k=0;
+        for(int n : list){
+            for(int i=0; i<map.get(n); i++){
+                ans[k++] = n;
+            }
+        }
+        return ans;
     }
 }
