@@ -1,7 +1,12 @@
 class Solution {
     public int firstStableIndex(int[] nums, int k) {
+        
         int l = nums.length;
+
+        // max[i] = index 0 se i tak ka maximum element
         int[] max = new int[l];
+
+        // min[i] = index i se last tak ka minimum element
         int[] min = new int[l];
         max[0] = nums[0];
         min[l-1] = nums[l-1];
