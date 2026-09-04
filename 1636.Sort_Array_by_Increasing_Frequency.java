@@ -48,7 +48,11 @@ class Solution {
             map.put(n, map.getOrDefault(n, 0)+1);
         }
         List<Integer> list = new ArrayList<>(map.keySet());
+
+        // sorting list according to freq 
         list.sort((a,b) -> {
+
+            // Agar frequency different hai to jiski frequency kam hai wo pehle 
             if(!map.get(b).equals(map.get(a))){
                 return map.get(a) - map.get(b);
             }else{
