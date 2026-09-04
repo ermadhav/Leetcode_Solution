@@ -19,9 +19,15 @@ class Solution {
                 // If two elements are equal, we found a pair
                 if(list.get(i).equals(list.get(j))){
                     equalCount++;
+
+                    // Remove both elements from the list
                     list.remove(j);
                     list.remove(i);
+
+                    // Move i one step back because the list size and indexes have changed
                     i--;
+
+                    // Move to the next element
                     break;
                 }
             }
