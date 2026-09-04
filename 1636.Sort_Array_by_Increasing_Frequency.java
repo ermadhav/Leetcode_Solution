@@ -63,6 +63,8 @@ class Solution {
         });
 
         int[] ans = new int[nums.length];
+
+        // ans ka index 
         int k=0;
         for(int n : list){
             for(int i=0; i<map.get(n); i++){
