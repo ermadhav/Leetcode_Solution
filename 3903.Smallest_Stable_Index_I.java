@@ -8,6 +8,8 @@ class Solution {
 
         // min[i] = index i se last tak ka minimum element
         int[] min = new int[l];
+
+        // Starting values initialize kar rahe hain
         max[0] = nums[0];
         min[l-1] = nums[l-1];
         for(int i=0; i<l; i++){
