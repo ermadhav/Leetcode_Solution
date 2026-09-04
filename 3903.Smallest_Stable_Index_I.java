@@ -21,6 +21,8 @@ class Solution {
         for(int i=l-2; i>=0; i--){
             max[i] = Math.min(min[i+1], nums[i]);
         }
+        
+        // Har index ko check karenge
         for(int i=0; i<l; i++){
             if(max[i] - min[i] <= k){
                 return i;
