@@ -3,6 +3,7 @@ class Solution {
 
         // used to remove duplicate
         HashSet<Integer> set = new HashSet<>();
+        // add array element into set
         for(int n:nums){
             set.add(n);
         }
