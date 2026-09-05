@@ -8,12 +8,15 @@ class Solution {
 
             // comparing arr1 elements with arr2
             for(int j=0; j<arr2.length; j++){
+
+                // kisi bhi arr2 ke elemts ka diff d se <= hai to curr elemt valid nahi hai 
                 if(Math.abs(arr1[i] - arr2[j]) <= d){
                     valid = false;
                     break;
                 }
                 
             }
+            // agar upar wali cond violate nahi hui to count++
             if(valid){
                 count++;
             }
