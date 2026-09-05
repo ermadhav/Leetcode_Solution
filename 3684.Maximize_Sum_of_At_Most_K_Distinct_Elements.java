@@ -8,7 +8,9 @@ class Solution {
             set.add(n);
         }
 
+        // add set to list
         ArrayList<Integer> list = new ArrayList<>(set);
+        // sorting list
         Collections.sort(list);
 
         
