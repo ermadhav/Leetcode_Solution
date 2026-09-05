@@ -16,6 +16,8 @@ class Solution {
         // Agar k elements se zyada unique elements nahi hain, toh jitne available hain utne hi lenge
         int size = Math.min(k, list.size());
         int[] ans = new int[size];
+
+        // List ke last se elements uthao kyuki vo bade hai
         for(int i=0; i<size; i++){
             ans[i] = list.get(list.size()-1-i);
         }
