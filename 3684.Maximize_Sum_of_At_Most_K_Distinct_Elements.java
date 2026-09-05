@@ -1,0 +1,21 @@
+class Solution {
+    public int[] maxKDistinct(int[] nums, int k) {
+
+        // used to remove duplicate
+        HashSet<Integer> set = new HashSet<>();
+        for(int n:nums){
+            set.add(n);
+        }
+
+        ArrayList<Integer> list = new ArrayList<>(set);
+        Collections.sort(list);
+
+        
+        int size = Math.min(k, list.size());
+        int[] ans = new int[size];
+        for(int i=0; i<size; i++){
+            ans[i] = list.get(list.size()-1-i);
+        }
+        return ans;
+    }
+}
