@@ -13,7 +13,7 @@ class Solution {
         // sorting list
         Collections.sort(list);
 
-        
+        // Agar k elements se zyada unique elements nahi hain, toh jitne available hain utne hi lenge
         int size = Math.min(k, list.size());
         int[] ans = new int[size];
         for(int i=0; i<size; i++){
