@@ -3,7 +3,9 @@ class Solution {
         int count = 0;  // Boundary par kitni baar wapas aaya
         int position = 0; // Ant ki current position
         for(int i=0; i<nums.length; i++){
-            position += nums[i]; // Positive = right, negative = left
+
+            // Positive = right, negative = left
+            position += nums[i]; 
             if(position == 0){
                 count++;
             }
