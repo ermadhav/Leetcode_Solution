@@ -12,6 +12,8 @@ class Solution {
             n /= 10;
         }
         int ans = 0;
+
+        // loop throught the each values and and freq
         for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
             int digit = entry.getKey();
             int freq  = entry.getValue();
