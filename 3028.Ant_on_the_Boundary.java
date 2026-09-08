@@ -6,6 +6,8 @@ class Solution {
 
             // Positive = right, negative = left
             position += nums[i]; 
+
+            // returned to boundary
             if(position == 0){
                 count++;
             }
