@@ -14,6 +14,7 @@ class Solution {
                 // Number of days until warmer temperature
                 ans[prev] = i-prev;
             }
+            // Store current day's index
             stack.push(i);
         }
         return ans;
