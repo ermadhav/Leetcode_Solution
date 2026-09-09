@@ -8,6 +8,7 @@ class Solution {
         for(int i=0; i<temperatures.length; i++){
             // find the next warmer day 
             while(!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]){
+                // Get the previous day's index
                 int prev = stack.pop();
                 ans[prev] = i-prev;
             }
