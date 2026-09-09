@@ -10,6 +10,8 @@ class Solution {
             while(!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]){
                 // Get the previous day's index
                 int prev = stack.pop();
+
+                // Number of days until warmer temperature
                 ans[prev] = i-prev;
             }
             stack.push(i);
