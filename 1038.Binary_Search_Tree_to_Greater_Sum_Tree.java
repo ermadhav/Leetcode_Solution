@@ -5,6 +5,8 @@ class Solution {
 
         // traverse right first (greater elemeents)
         bstToGst(root.right);
+
+        // Add current node to sum
         sum += root.val;
         root.val = sum;
 
