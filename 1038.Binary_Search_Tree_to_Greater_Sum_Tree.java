@@ -8,6 +8,8 @@ class Solution {
 
         // Add current node to sum
         sum += root.val;
+
+        // update curr node with greater tree value
         root.val = sum;
 
         // traverse right first (greater elemeents)
