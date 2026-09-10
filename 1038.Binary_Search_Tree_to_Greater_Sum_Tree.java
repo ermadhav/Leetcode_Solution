@@ -7,6 +7,8 @@ class Solution {
         bstToGst(root.right);
         sum += root.val;
         root.val = sum;
+
+        // traverse right first (greater elemeents)
         bstToGst(root.left);
         return root;
     }
