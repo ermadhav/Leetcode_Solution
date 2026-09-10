@@ -45,6 +45,8 @@ class Solution {
         int sum = root.val+left[0]+right[0];
         // Calculate total number of nodes in current subtree
         int count = 1+left[1]+right[1];
+
+        // Check if current node value equals subtree average
         if(root.val == sum/count){
             ans++;
         }
