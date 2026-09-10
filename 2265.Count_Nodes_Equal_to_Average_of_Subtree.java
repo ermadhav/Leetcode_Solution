@@ -43,6 +43,7 @@ class Solution {
 
         // Calculate total sum of current subtree
         int sum = root.val+left[0]+right[0];
+        // Calculate total number of nodes in current subtree
         int count = 1+left[1]+right[1];
         if(root.val == sum/count){
             ans++;
