@@ -12,7 +12,7 @@ class Solution {
         // update curr node with greater tree value
         root.val = sum;
 
-        // traverse right first (greater elemeents)
+        // traverse right first (smaller elemeents)
         bstToGst(root.left);
         return root;
     }
