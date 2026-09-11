@@ -7,6 +7,8 @@ class Solution {
             map.put(s, map.getOrDefault(s, 0)+1);
         }
         int count =0;
+
+        // finding kth string in original order
         for(String s: arr){
             if(map.get(s) == 1){
                 count++;
