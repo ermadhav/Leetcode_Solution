@@ -9,8 +9,13 @@ class Solution {
 
             // setting a very large no. initially
             dp[x] = Integer.MAX_VALUE;
+
+            // trying all possible splits
             for(int a =1; a<x; a++){
+
                 int b = x-a;
+
+                // costing of spitting + cost of split of both part
                 dp[x] = Math.min(dp[x], a*b+dp[a]+dp[b]);
             }
         }
