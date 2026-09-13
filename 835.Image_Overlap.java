@@ -2,7 +2,10 @@ class Solution {
     public int largestOverlap(int[][] img1, int[][] img2) {
         int ans = 0;
         int n = img1.length;
+
+        //try every vertical shift
         for(int down=-(n-1); down<=n-1; down++ ){
+            //try every vertical shift
             for(int right=-(n-1); right<=n-1; right++ ){
                 int count =0;
                 for(int row=0; row<n; row++){
