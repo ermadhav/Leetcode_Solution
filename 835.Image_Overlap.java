@@ -21,7 +21,8 @@ class Solution {
                             // Check if moved cell is inside img2
                             if(newRow >= 0 && newRow<n && newCol >= 0 && newCol<n && 
                                 img2[newRow][newCol] == 1){
-                                    count++;
+                                // found overlapping
+                                count++;
                             }
                         }
                     }   
