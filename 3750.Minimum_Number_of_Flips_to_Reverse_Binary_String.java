@@ -14,6 +14,8 @@ class Solution {
         if(s.charAt(i) != s.charAt(j)){
             count +=2;
         }
+
+        // it will help to move towrds center
         i++;
         j--;
     }
