@@ -26,6 +26,8 @@ class Solution {
         int y2 = rec1[3];
         int y_2 = rec2[3];
         boolean ans = false;
+
+        // checking if there is overlap in x,y
         if(Math.max(x1, x_1)<Math.min(x2, x_2) && Math.max(y1, y_1)<Math.min(y2, y_2)  ){
             ans = true;
         }else{
