@@ -29,9 +29,9 @@ class Solution {
 
         // checking if there is overlap in x,y
         if(Math.max(x1, x_1)<Math.min(x2, x_2) && Math.max(y1, y_1)<Math.min(y2, y_2)  ){
-            ans = true;
+            ans = true; // overlapping happens
         }else{
-            ans = false;
+            ans = false; // no overlapping
         }
         return ans;
     }
