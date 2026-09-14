@@ -10,3 +10,24 @@
 // }
 
 // Approach ---> 2
+
+// class Solution {
+//     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
+//         int x1 = rec1[0];
+//         int x_1 = rec2[0];
+//         int x2 = rec1[2];
+//         int x_2 = rec2[2];
+
+//         int y1 = rec1[1];
+//         int y_1 = rec2[1];
+//         int y2 = rec1[3];
+//         int y_2 = rec2[3];
+//         boolean ans = false;
+//         if(Math.max(x1, x_1)<Math.min(x2, x_2) && Math.max(y1, y_1)<Math.min(y2, y_2)  ){
+//             ans = true;
+//         }else{
+//             ans = false;
+//         }
+//         return ans;
+//     }
+// }
