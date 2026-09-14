@@ -9,6 +9,8 @@ class Solution {
 
     // comparing bits from front and bakc
     while(i<j){
+
+        // if diff then needs to be filled
         if(s.charAt(i) != s.charAt(j)){
             count +=2;
         }
