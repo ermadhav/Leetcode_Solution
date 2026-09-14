@@ -20,6 +20,7 @@ class Solution {
         int x2 = rec1[2];
         int x_2 = rec2[2];
 
+        // get Y Coordinate of Rect
         int y1 = rec1[1];
         int y_1 = rec2[1];
         int y2 = rec1[3];
