@@ -5,7 +5,7 @@ class Solution {
             map.put(ch, map.getOrDefault(ch,0)+1);
         }
         int freq =-1;
-        for(int f : map.Values()){
+        for(int f : map.values()){
             if(freq == -1){
                 freq = f;
             }else if(freq != f){
