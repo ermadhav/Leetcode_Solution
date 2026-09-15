@@ -36,8 +36,12 @@ class Solution {
         for(char ch : s.toCharArray()){
             map.put(ch, map.getOrDefault(ch,0)+1);
         }
+        // store the frwq of 1st char 
         int freq = map.get(s.charAt(0));
+
+        // matching the first one freq with others
         for(int f : map.values()){
+            // if not matched return false
             if(f != freq){
                 return false;
             }
