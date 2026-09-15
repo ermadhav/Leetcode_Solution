@@ -12,6 +12,8 @@ class Solution {
 
         // checking if all char has same freq
         for(int f : map.values()){
+
+            // storing the first freq
             if(freq == -1){
                 freq = f;
             }else if(freq != f){
