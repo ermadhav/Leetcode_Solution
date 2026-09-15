@@ -22,6 +22,7 @@ class Solution {
                 return false;
             }
         }
+        // if same
         return true;
     }
 }
