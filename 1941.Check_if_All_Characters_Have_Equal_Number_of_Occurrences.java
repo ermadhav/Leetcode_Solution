@@ -16,6 +16,8 @@ class Solution {
             // storing the first freq
             if(freq == -1){
                 freq = f;
+
+                // if any freq is diff return false
             }else if(freq != f){
                 return false;
             }
