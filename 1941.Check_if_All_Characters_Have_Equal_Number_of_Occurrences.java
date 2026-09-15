@@ -1,3 +1,5 @@
+// Aproach --> 1
+
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
@@ -19,3 +21,6 @@ class Solution {
         return true;
     }
 }
+
+
+// Aproach --> 2
