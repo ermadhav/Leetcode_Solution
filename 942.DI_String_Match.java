@@ -3,7 +3,7 @@ class Solution {
         int n = s.length();
         int low = 0;
         int high = n;
-        ArrayList list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for(char c : s.toCharArray()){
             if(c == 'I'){
                 list.add(low);
