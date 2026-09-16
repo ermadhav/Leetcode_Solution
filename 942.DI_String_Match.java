@@ -23,6 +23,8 @@ class Solution {
         }
         // adding the last remaning no.
         list.add(low);
+
+        // covnerting arralist to int[]
         int[] ans = new int[list.size()];
         for(int i=0; i<list.size(); i++){
             ans[i] = list.get(i);
