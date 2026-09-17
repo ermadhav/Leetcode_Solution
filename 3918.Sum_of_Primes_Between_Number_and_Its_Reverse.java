@@ -2,11 +2,14 @@ class Solution {
     public int sumOfPrimesInRange(int n) {
         int num =n;
         int reverse =0;
+
+        // reverse the n
         while(n>0){
             int digit = n%10;
             reverse = reverse*10+n%10;
             n /= 10;
         }
+        
         int ans =0;
         int start = Math.min(num, reverse);
         int end = Math.max(num, reverse);
