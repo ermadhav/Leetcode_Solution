@@ -18,6 +18,8 @@ class Solution {
 
         // checnking every no in the rane 
         for(int i=start; i<=end; i++){
+            
+            // assuming no. is prime
             boolean prime =true;
             if(i<2) continue;
             for(int j=2; j*j <=i; j++){
