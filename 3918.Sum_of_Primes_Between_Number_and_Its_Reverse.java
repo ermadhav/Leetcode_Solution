@@ -11,11 +11,12 @@ class Solution {
         }
         
         int ans =0;
-        
+
         // used to create the range 
         int start = Math.min(num, reverse);
         int end = Math.max(num, reverse);
-        
+
+        // checnking every no in the rane 
         for(int i=start; i<=end; i++){
             boolean prime =true;
             if(i<2) continue;
