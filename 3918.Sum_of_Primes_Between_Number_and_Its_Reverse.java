@@ -18,16 +18,20 @@ class Solution {
 
         // checnking every no in the rane 
         for(int i=start; i<=end; i++){
-            
+
             // assuming no. is prime
             boolean prime =true;
             if(i<2) continue;
+
+            // check if i has any divisor from 2 to sqrt(i)
             for(int j=2; j*j <=i; j++){
+                // if i is divisible by j, it is not prime
                 if(i%j == 0){
                     prime = false;
-                
+                    break;
                 }
             }
+            // if prime then add it to sum
             if(prime){
                 ans += i;
             }
