@@ -11,7 +11,7 @@ class Solution {
                 break; // when found break the loop
             }
         }
-        
+        // else ans is -1
         return ans;
     }
 }
