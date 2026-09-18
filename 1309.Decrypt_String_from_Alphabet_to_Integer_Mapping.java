@@ -5,6 +5,8 @@ class Solution {
 
         // looping from last
         for(int i=n-1; i>=0; i--){
+
+            // if the # found get the next 2 char from #
             if(s.charAt(i) == '#'){
                 n = Integer.parseInt(s.substring(i-2, i));
                 i -=2;
