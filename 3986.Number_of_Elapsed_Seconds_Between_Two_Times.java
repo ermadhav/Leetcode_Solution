@@ -11,6 +11,7 @@ class Solution {
         // total seconds in Two(TwoTime)
         int totalSecondTwo = 3600*Integer.parseInt(partTwo[0])+60*Integer.parseInt(partTwo[1])+Integer.parseInt(partTwo[2]);
 
+        // return the diff
         return totalSecondTwo-totalSecondOne;
     }
 }
