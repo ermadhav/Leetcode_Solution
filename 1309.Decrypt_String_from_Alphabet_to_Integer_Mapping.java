@@ -2,6 +2,8 @@ class Solution {
     public String freqAlphabets(String s) {
         String ans = "";
         int n = s.length();
+
+        // looping from last
         for(int i=n-1; i>=0; i--){
             if(s.charAt(i) == '#'){
                 n = Integer.parseInt(s.substring(i-2, i));
