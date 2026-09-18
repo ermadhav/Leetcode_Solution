@@ -6,7 +6,7 @@ class Solution {
         while(num.charAt(i) == '0'){
             i--;
         }
-        // then return the substring
+        // then return the substring from 0 to new i
         return num.substring(0, i+1);
     }
 }
