@@ -8,7 +8,7 @@ class Solution {
             // if first and last char matches return the index
             if(s.charAt(i) == s.charAt(n-i-1)){
                 ans =i;
-                break;
+                break; // when found break the loop
             }
         }
         
