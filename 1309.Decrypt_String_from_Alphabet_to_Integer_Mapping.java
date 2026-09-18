@@ -16,6 +16,8 @@ class Solution {
             // stich all this to ans
             ans += (char)('a'+n-1);
         }
+
+        // reverse the ans because we are looping from last
         return new StringBuilder(ans).reverse().toString();
     }
 }
