@@ -8,7 +8,7 @@ class Solution {
         int diffX = xCenter - closestX;
         int diffY = yCenter - closestY;
 
-
+        // compare squared dist with squared radius
         if(diffX*diffX+diffY*diffY <= radius*radius) return true;
 
         return false;
