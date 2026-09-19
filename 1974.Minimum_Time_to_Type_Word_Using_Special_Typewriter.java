@@ -10,6 +10,7 @@ class Solution {
             int target = word.charAt(i) - 'a';
             // distance in cw direction from curr to target
             int cw = Math.abs(curr-target);
+            // in opposite dir too ACW
             int acw = 26-cw;
             int movement = Math.min(cw, acw);
             ans += movement+1;
