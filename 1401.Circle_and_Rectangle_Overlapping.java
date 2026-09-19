@@ -5,8 +5,8 @@ class Solution {
 
         int diffX = xCenter - closestX;
         int diffY = yCenter - closestY;
-        
-        if(diffX*diffX+diffY*diffY <= radius) return true;
+
+        if(diffX*diffX+diffY*diffY <= radius*radius) return true;
 
         return false;
     }
