@@ -6,7 +6,7 @@ class Solution {
         // typewritter starts from 'a'
         int curr = 0;
         for(int i=0; i<l; i++){
-            // converting char into num
+            // converting target char into num
             int target = word.charAt(i) - 'a';
             int cw = Math.abs(curr-target);
             int acw = 26-cw;
