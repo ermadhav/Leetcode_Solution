@@ -4,7 +4,7 @@ class Solution {
         int enter =0;
 
         for(int i=0; i<s.length(); i++)   {
-            // if anyone Enters
+            // if anyone Enters incrs the enter and update chair with the max chair so far
             if(s.charAt(i) == 'E'){
                 enter++;
                 chair = Math.max(chair, enter);
