@@ -8,6 +8,7 @@ class Solution {
         for(int i=0; i<l; i++){
             // converting target char into num
             int target = word.charAt(i) - 'a';
+            // distance in cw direction from curr to target
             int cw = Math.abs(curr-target);
             int acw = 26-cw;
             int movement = Math.min(cw, acw);
