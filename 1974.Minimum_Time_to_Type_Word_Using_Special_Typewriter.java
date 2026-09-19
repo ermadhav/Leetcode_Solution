@@ -15,6 +15,8 @@ class Solution {
 
             // shorter distance
             int movement = Math.min(cw, acw);
+
+            // add movement + 1 in the ans
             ans += movement+1;
             curr = target;
         }
