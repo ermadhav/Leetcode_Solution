@@ -4,6 +4,7 @@ class Solution {
         int closestX = Math.max(x1, Math.min(x2, xCenter));
         int closestY = Math.max(y1, Math.min(y2, yCenter));
 
+        diff between center and closestX and Y
         int diffX = xCenter - closestX;
         int diffY = yCenter - closestY;
 
