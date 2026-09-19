@@ -18,6 +18,8 @@ class Solution {
 
             // add movement + 1 in the ans
             ans += movement+1;
+
+            // move the curr to target
             curr = target;
         }
         return ans;
