@@ -8,6 +8,7 @@ class Solution {
             }else{
                 curr = 1; // if not then reset
             }
+            
             max = Math.max(curr, max);
         }
         return max;
