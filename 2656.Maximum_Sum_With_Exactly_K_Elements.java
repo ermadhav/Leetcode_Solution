@@ -4,6 +4,7 @@ class Solution {
         Arrays.sort(nums);
         // index of last element
         int l = nums.length-1;
+        // each time increase by 1,2...k-1
         int ans = nums[l]*k+ (k*(k-1)/2);
         return ans;
     }
