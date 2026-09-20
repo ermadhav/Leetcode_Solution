@@ -7,6 +7,7 @@ class Solution {
             // new value
             if(nums[i] <= nums[i-1]){
                 int val=nums[i-1]+1;
+                // calculating how many increament needed
                 ans +=val-nums[i];
                 nums[i] = val;
             }
