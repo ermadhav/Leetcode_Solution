@@ -9,6 +9,7 @@ class Solution {
                 int val=nums[i-1]+1;
                 // calculating how many increament needed
                 ans +=val-nums[i];
+                // updating to new value for next comparision
                 nums[i] = val;
             }
         }
