@@ -6,10 +6,11 @@ class Solution {
         int even=0;
         // traverse from right to left
         for(int i=n-1; i>=0; i--){
-            // 
+            // even needs odd no.
             if(nums[i]%2==0){
                 ans[i] = odd;
                 even++;
+            // even needs odd no.
             }else{
                 ans[i] = even;
                 odd++;
