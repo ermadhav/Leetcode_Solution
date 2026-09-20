@@ -7,6 +7,7 @@ class Solution {
             // if same char occurs incrs count
             if(i>0 && s.charAt(i) == s.charAt(i-1)){
                 count++;
+                // else reset the count
             }else{
                 count =1;
             }
