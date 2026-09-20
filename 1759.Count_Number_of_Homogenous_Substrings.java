@@ -10,6 +10,7 @@ class Solution {
             }else{
                 count =1;
             }
+            // add all substring ending at i
             ans += count;
             ans %= mod;
         }
