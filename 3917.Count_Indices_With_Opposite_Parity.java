@@ -15,6 +15,6 @@ class Solution {
                 odd++;
             }
         }
-        return ans[];
+        return ans;
     }
 }
