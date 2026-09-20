@@ -10,7 +10,7 @@ class Solution {
             if(nums[i]%2==0){
                 ans[i] = odd;
                 even++;
-            // even needs odd no.
+            // ODD needs EVEN no.
             }else{
                 ans[i] = even;
                 odd++;
