@@ -15,7 +15,7 @@ class Solution {
                 special.add(ch);
             }
         }
-
+        // reverse only the letter
         Collections.reverse(letter);
 
         StringBuilder ans = new StringBuilder();
