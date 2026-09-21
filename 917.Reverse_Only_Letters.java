@@ -29,7 +29,7 @@ class Solution {
                 ans.append(letter.get(l));
                 l++;
             }else{
-                // but if there is special char 
+                // but if there is special char then put it in 
                 ans.append(special.get(spcl));
                 spcl++;
             }
