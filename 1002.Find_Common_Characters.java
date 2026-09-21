@@ -6,6 +6,7 @@ class Solution {
         for(char ch: words[0].toCharArray()){
             freq[ch - 'a']++;
         }
+        // Check every other word
         for(int i=1; i<words.length; i++){
             int[] temp=new int[26]; 
             for(char ch: words[i].toCharArray()){
