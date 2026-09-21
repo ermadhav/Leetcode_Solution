@@ -21,6 +21,8 @@ class Solution {
         StringBuilder ans = new StringBuilder();
         int l=0; // for letter
         int spcl =0; // 
+
+        // using this for og postion
         for(char ch : s.toCharArray()){
             if(Character.isLetter(ch)){
                 ans.append(letter.get(l));
