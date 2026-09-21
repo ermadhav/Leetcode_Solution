@@ -1,4 +1,4 @@
-// Approach ---> 2 
+// Approach ---> 1
 
 class Solution {
     public String finalString(String s) {
