@@ -32,6 +32,7 @@ class Solution {
             if(ch != 'i'){
                 ans.append(ch);
             }else{
+                // else reverse the ans till we got 
                 ans.reverse();
             }
         }
