@@ -11,6 +11,8 @@ class Solution {
                 special.add(ch);
             }
         }
+
+        // reverse letter and special
         Collections.reverse(letter);
         Collections.reverse(special);
 
