@@ -1,3 +1,5 @@
+// Approach ---> 2 
+
 class Solution {
     public String finalString(String s) {
         // StringBuilder is used since it supports efficient append and reverse
@@ -20,7 +22,7 @@ class Solution {
     }
 }
 
-// Approach --- 2 
+// Approach ---> 2 
 
 class Solution {
     public String finalString(String s) {
