@@ -16,6 +16,7 @@ class Solution {
         Collections.reverse(letter);
         Collections.reverse(special);
 
+        // putting the reverse letter and special in og order
         StringBuilder ans = new StringBuilder();
         int l=0;
         int spcl =0;
