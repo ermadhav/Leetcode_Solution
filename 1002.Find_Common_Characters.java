@@ -1,6 +1,8 @@
 class Solution {
     public List<String> commonChars(String[] words) {
         int[] freq =new int[26];
+
+        // Count characters in first word
         for(char ch: words[0].toCharArray()){
             freq[ch - 'a']++;
         }
