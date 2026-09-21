@@ -28,6 +28,7 @@ class Solution {
     public String finalString(String s) {
         StringBuilder ans = new StringBuilder();
         for(char ch:s.toCharArray())  {
+            // if not I then append the char in ans
             if(ch != 'i'){
                 ans.append(ch);
             }else{
