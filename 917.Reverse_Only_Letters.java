@@ -7,6 +7,7 @@ class Solution {
         List<Character> letter = new ArrayList<>();
         List<Character> special = new ArrayList<>();
 
+        // separate the letter and spcl char separetly
         for(char ch : s.toCharArray()){
             if(Character.isLetter(ch)){
                 letter.add(ch);
