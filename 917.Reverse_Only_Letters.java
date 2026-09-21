@@ -24,6 +24,7 @@ class Solution {
 
         // using this for og postion
         for(char ch : s.toCharArray()){
+            // if char is letter then put the reversed 
             if(Character.isLetter(ch)){
                 ans.append(letter.get(l));
                 l++;
