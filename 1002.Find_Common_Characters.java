@@ -12,6 +12,7 @@ class Solution {
             for(char ch: words[i].toCharArray()){
                 temp[ch - 'a']++;
             }
+            // Keep minimum count
             for(int j=0; j<26; j++){
                 freq[j]=Math.min(freq[j], temp[j]);
             }
