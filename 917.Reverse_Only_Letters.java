@@ -19,8 +19,8 @@ class Solution {
         Collections.reverse(letter);
 
         StringBuilder ans = new StringBuilder();
-        int l=0;
-        int spcl =0;
+        int l=0; // for letter
+        int spcl =0; // 
         for(char ch : s.toCharArray()){
             if(Character.isLetter(ch)){
                 ans.append(letter.get(l));
