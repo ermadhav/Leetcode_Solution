@@ -17,6 +17,7 @@ class Solution {
                 freq[j]=Math.min(freq[j], temp[j]);
             }
         }
+        // Add characters according to their common count
         List<String> ans=new ArrayList<>();
         for(int i=0; i<26; i++){
             while(freq[i] --> 0){
