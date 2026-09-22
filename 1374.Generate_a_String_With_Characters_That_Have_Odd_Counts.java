@@ -7,6 +7,7 @@ class Solution {
             for(int i=0; i<n; i++){
                 ans.append('a');
             }
+        // else add 'a' n-1 times and and 1 time 'b' 
         }else{
             for(int i=0; i<n-1; i++){
                 ans.append('a');
