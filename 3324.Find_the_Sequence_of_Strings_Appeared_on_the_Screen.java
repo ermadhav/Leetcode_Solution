@@ -11,6 +11,7 @@ class Solution {
             for(char c='b'; c<= ch; c++){
                 // change the last char
                 s.setCharAt(s.length()-1,c);
+                // store the curr  string
                 ans.add(s.toString());
             }
         }
