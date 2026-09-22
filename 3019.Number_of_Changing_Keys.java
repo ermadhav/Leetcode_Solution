@@ -4,6 +4,7 @@ class Solution {
         for(int i=0; i<s.length()-1; i++){
 
             // converting both char before comparing
+            // a and A to be counted as same
             if(Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(i+1))){
                 count++;
             }
