@@ -10,6 +10,7 @@ class Solution {
             }else{
                 ones++;
             }
+            // if diff is is less than or equal, prefix is valid
             if(Math.abs(zeros-ones) <= 1){
                 ans++;
             }
