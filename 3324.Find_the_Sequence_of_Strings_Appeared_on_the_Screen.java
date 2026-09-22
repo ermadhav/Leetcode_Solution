@@ -9,6 +9,7 @@ class Solution {
 
              // key2: change 'a' to the required char
             for(char c='b'; c<= ch; c++){
+                // change the last char
                 s.setCharAt(s.length()-1,c);
                 ans.add(s.toString());
             }
