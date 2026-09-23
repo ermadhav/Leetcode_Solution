@@ -8,6 +8,7 @@ class Solution {
         }
         long prefix=0;
         for(int i=0; i<beans.length; i++){
+            // Remove smaller bags + extra beans from remaining bags
             long remove = prefix+(total - (long) beans[i]*(beans.length-i));
             ans = Math.min(ans, remove);
         }
