@@ -7,6 +7,7 @@ class Solution {
         for(int i=0; i<beans.length; i++){
             total += beans[i];
         }
+        // remove all beans from bags before i, and reduce remaining bags to beans[i]
         long prefix=0;
         for(int i=0; i<beans.length; i++){
             long remove = prefix+(total - (long) beans[i]*(beans.length-i));
