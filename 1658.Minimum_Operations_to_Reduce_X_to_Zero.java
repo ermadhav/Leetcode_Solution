@@ -4,6 +4,7 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             totalSum += nums[i];
         }
+        // sum we need to find
         int target = totalSum-x;
         int left =0;
         int sum=0;
