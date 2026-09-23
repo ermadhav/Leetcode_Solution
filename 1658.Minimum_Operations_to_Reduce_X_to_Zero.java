@@ -8,14 +8,14 @@ class Solution {
         int left =0;
         int sum=0;
         int maxLen=-1;
-        // finding longest subarray where sum == target
         for(int i=0; i<nums.length; i++){
             sum += nums[i];
-            while(i<left && sum>target){
+            while(left<=i && sum>target){
                 sum -= nums[left];
+                left++;
             }
             if(sum== target){
-                maxLen = Math.max(maxLen, right-left+1);
+                maxLen = Math.max(maxLen, i-left+1);
             }   
         }
         if(maxLen == -1){
