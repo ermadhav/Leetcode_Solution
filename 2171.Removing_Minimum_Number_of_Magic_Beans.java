@@ -10,6 +10,7 @@ class Solution {
         for(int i=0; i<beans.length; i++){
             // Remove smaller bags + extra beans from remaining bags
             long remove = prefix+(total - (long) beans[i]*(beans.length-i));
+            // Add current bag to removed prefix
             ans = Math.min(ans, remove);
         }
         return ans; 
