@@ -1,8 +1,9 @@
 class Solution {
     public long minimumRemoval(int[] beans) {
         Arrays.sort(beans);
-        int total =0;
+        long total =0;
         long ans = Long.MAX_VALUE;
+        // Calculate total beans
         for(int i=0; i<beans.length; i++){
             total += beans[i];
         }
