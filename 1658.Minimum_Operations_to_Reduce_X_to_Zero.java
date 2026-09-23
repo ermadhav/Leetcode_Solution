@@ -10,6 +10,7 @@ class Solution {
         int maxLen=-1;
         // finding the subarray with sum using sliding window
         for(int i=0; i<nums.length; i++){
+            // add curr element to window
             sum += nums[i];
             while(left<=i && sum>target){
                 sum -= nums[left];
