@@ -8,6 +8,7 @@ class Solution {
         int left =0;
         int sum=0;
         int maxLen=-1;
+        // finding the subarray with sum using sliding window
         for(int i=0; i<nums.length; i++){
             sum += nums[i];
             while(left<=i && sum>target){
