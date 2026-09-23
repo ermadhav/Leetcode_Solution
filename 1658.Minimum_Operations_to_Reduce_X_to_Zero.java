@@ -12,6 +12,7 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             // add curr element to window
             sum += nums[i];
+            // if sum becomes > target decrease the window
             while(left<=i && sum>target){
                 sum -= nums[left];
                 left++;
