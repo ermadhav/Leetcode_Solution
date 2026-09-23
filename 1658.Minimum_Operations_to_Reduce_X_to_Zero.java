@@ -22,9 +22,11 @@ class Solution {
                 maxLen = Math.max(maxLen, i-left+1);
             }   
         }
+        // if no valid string found then return -1;
         if(maxLen == -1){
             return -1;
         }
+        // this is usde to remove the elements outside longest subarray
         return nums.length-maxLen;
     }
 }
