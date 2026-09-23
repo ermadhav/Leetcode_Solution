@@ -17,6 +17,7 @@ class Solution {
                 sum -= nums[left];
                 left++;
             }
+            // if found then update the len with maximum
             if(sum== target){
                 maxLen = Math.max(maxLen, i-left+1);
             }   
