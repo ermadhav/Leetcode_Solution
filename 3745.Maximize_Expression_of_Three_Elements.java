@@ -1,5 +1,6 @@
 class Solution {
     public int maximizeExpressionOfThree(int[] nums) {
+        // store the sum of first three elements for comparing
         int ans = nums[0]+nums[1]-nums[2];
         for (int i=0;i<nums.length;i++) {
             for (int j=i+1;j<nums.length;j++) {
