@@ -33,6 +33,7 @@ class Solution {
                 sum += temp % 10;
                 temp /= 10;
             }
+            // Check if digit sum equals index
             if(sum == i){
                 return i;
             }
