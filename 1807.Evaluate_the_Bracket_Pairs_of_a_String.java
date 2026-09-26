@@ -8,6 +8,7 @@ class Solution {
         StringBuilder ans = new StringBuilder();
         // traverse the string
         for(int i=0; i<s.length(); i++){
+            // '(' is found, find the closing ')'
             if(s.charAt(i) == '('){
                 int j=i+1;
                 while(s.charAt(j) != ')'){
