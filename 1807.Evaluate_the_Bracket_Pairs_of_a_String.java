@@ -14,6 +14,7 @@ class Solution {
                 while(s.charAt(j) != ')'){
                     j++;
                 }
+                // get the key inside brackets
                 String key = s.substring(i+1, j);
                 if(map.containsKey(key)){
                     ans.append(map.get(key));
