@@ -25,6 +25,7 @@ class Solution {
                 // skip the processed bracket part
                 i=j;
             }else{
+                // add normal character
                 ans.append(s.charAt(i));
             }
         }
