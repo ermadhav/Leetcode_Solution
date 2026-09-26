@@ -6,6 +6,7 @@ class Solution {
             map.put(x.get(0), x.get(1));
         }
         StringBuilder ans = new StringBuilder();
+        // traverse the string
         for(int i=0; i<s.length(); i++){
             if(s.charAt(i) == '('){
                 int j=i+1;
