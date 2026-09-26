@@ -22,6 +22,7 @@ class Solution {
                 }else{
                     ans.append("?");
                 }
+                // skip the processed bracket part
                 i=j;
             }else{
                 ans.append(s.charAt(i));
