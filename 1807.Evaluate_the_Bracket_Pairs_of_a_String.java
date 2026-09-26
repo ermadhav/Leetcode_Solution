@@ -1,5 +1,6 @@
 class Solution {
     public String evaluate(String s, List<List<String>> knowledge) {
+        // will be used to store key value pair
         HashMap<String, String> map = new HashMap<>();
         for(List<String> x : knowledge){
             map.put(x.get(0), x.get(1));
