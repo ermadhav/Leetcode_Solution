@@ -16,6 +16,7 @@ class Solution {
                 sum += digit;
             }
         }
+        // convert digit to number and multiply too
         return Long.parseLong(num)*sum;
     }
 }
