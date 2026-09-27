@@ -8,7 +8,9 @@ class Solution {
             int digit = n%10; 
             // remove the last digit from num
             n = n/10;
+
             if(digit != 0){
+                // add digit to num in start for correct order
                 num = ""+digit+num;
                 sum += digit;
             }
