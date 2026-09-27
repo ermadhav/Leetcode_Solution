@@ -6,6 +6,7 @@ class Solution {
         String v = String.valueOf(x);
         // if first char is not X && N contains X then return true
         if(s.charAt(0) != v.charAt(0) && s.contains(v)) return true;
+        // else
         return false;
     }
 }
