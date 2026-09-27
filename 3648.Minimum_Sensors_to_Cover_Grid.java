@@ -6,6 +6,7 @@ class Solution {
         int rows =(n+size-1)/size;
         // sensor needed to cover rows
         int cols =(m+size-1)/size;
+        // total sensor needed
         return rows*cols;
     }
 }
