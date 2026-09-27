@@ -22,6 +22,7 @@ class Solution {
         if(n%2 == 0){
             return n/2;
         }
+        // else n is odd then return n as it is 
         return n;
     }
 }
