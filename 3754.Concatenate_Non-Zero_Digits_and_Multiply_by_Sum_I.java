@@ -12,6 +12,7 @@ class Solution {
             if(digit != 0){
                 // add digit to num in start for correct order
                 num = ""+digit+num;
+                // add digit to sum too
                 sum += digit;
             }
         }
