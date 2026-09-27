@@ -1,7 +1,9 @@
 class Solution {
     public long sumAndMultiply(int n) {
+        
         int sum =0;
         String num ="";
+
         // extracting each digit from num
         while(n>0){
             // get the last digit from num
