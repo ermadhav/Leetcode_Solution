@@ -13,6 +13,7 @@ class Solution {
         }
         // if diff if >= 50 return true beacuse it is good 
         if((squareSum - digitSum) >= 50) return true;
+        // else
         return false;
     }
 }
