@@ -7,7 +7,7 @@ class Solution {
             sum += Math.abs(nums[0]-nums[i]);
         }
         result[0]=sum;
-        // calculate remaining
+        // calculate remaining results using prev results
         for(int j=0; j<nums.length; j++){
             result[j] = result[j-1]+(2*j-nums.length)*(nums[j]-nums[j-1]);
         }
