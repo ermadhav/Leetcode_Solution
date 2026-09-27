@@ -1,3 +1,5 @@
+// Approach ---> 1
+
 // class Solution {
 //     public int numberOfCuts(int n) {
 //         // If there's only 1 slice, no cuts are needed
