@@ -6,6 +6,7 @@ class Solution {
         while(n>0){
             int digit = n%10;
             n = n/10;
+            // add the digit 1 by 1
             digitSum += digit;
             squareSum += digit*digit;
         }
