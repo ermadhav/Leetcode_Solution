@@ -2,6 +2,7 @@ class Solution {
     public long[] sumOfThree(long num) {
         // to store the ans
         long[] arr = new long[3];
+        // if num is not divisible by 3 return empty array
         if(num % 3!=0){
             return new long[0];
         }
