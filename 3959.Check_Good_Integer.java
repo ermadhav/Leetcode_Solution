@@ -8,6 +8,7 @@ class Solution {
             n = n/10;
             // add the digit 1 by 1
             digitSum += digit;
+            // add the square of digits 1 by 1
             squareSum += digit*digit;
         }
         if((squareSum - digitSum) >= 50) return true;
