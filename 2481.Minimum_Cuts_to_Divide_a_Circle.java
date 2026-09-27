@@ -18,6 +18,7 @@ class Solution {
     public int numberOfCuts(int n) {
         // if n == 1 return 0 because there is no way to to cut circle in one part
         if(n == 1) return 0;
+        // if no. of cuts is even return the half of n because total cuts need is half of n
         if(n%2 == 0){
             return n/2;
         }
