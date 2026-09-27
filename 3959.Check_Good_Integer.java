@@ -11,6 +11,7 @@ class Solution {
             // add the square of digits 1 by 1
             squareSum += digit*digit;
         }
+        // if diff if >= 50 return true beacuse it is good 
         if((squareSum - digitSum) >= 50) return true;
         return false;
     }
