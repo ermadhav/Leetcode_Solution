@@ -5,6 +5,7 @@ class Solution {
         int sc = source[1];
         int tr = target[0];
         int tc = target[1];
+        // if src and target is same return 0 because there is no need to move 
         if(sc == tc && sr == tr){
             return 0;
         }else if((sc+sr)%2 != (tr+tc)%2){
