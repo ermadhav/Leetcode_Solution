@@ -15,6 +15,7 @@ class Solution {
         }else if(Math.abs(sr-tr) == Math.abs(sc-tc)){
             return 1;
         }
+        // maximum move to reach any point using bishop
         return 2;
     }
 }
