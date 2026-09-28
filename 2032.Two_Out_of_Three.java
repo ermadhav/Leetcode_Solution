@@ -11,6 +11,8 @@ class Solution {
         for(int x:nums3)set3.add(x);
         
         // add elements of each array into their respective sets
+
+        // Count elements from set1
         for(int x: set1){
             map.put(x, map.getOrDefault(x, 0)+1);
         }
