@@ -8,6 +8,7 @@ class Solution {
         // if src and target is same return 0 because there is no need to move 
         if(sc == tc && sr == tr){
             return 0;
+        // if there is diff in color of source and taarget (eg src = white, target = black)
         }else if((sc+sr)%2 != (tr+tc)%2){
             return -1;
         }else if(Math.abs(sr-tr) == Math.abs(sc-tc)){
