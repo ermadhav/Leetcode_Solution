@@ -22,9 +22,9 @@ class Solution {
             map.put(x, map.getOrDefault(x, 0)+1);
         }
         
-        //map will store: number-> no. of arrays it appear in
+        // map will store: number-> no. of arrays it appear in
         HashMap<Integer,Integer> map =new HashMap<>();
-        
+
         // store numbers that appear in at least 2 arrays
         List<Integer> ans = new ArrayList<>();
         for(int x: map.keySet()){
