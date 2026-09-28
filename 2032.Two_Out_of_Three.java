@@ -9,9 +9,7 @@ class Solution {
         for(int x:nums1)set1.add(x);
         for(int x:nums2)set2.add(x);
         for(int x:nums3)set3.add(x);
-        //map will store: number-> no. of arrays it appear in
-        HashMap<Integer,Integer> map =new HashMap<>();
-
+        
         // add elements of each array into their respective sets
         for(int x: set1){
             map.put(x, map.getOrDefault(x, 0)+1);
@@ -22,6 +20,10 @@ class Solution {
         for(int x: set3){
             map.put(x, map.getOrDefault(x, 0)+1);
         }
+        
+        //map will store: number-> no. of arrays it appear in
+        HashMap<Integer,Integer> map =new HashMap<>();
+
         List<Integer> ans = new ArrayList<>();
         for(int x: map.keySet()){
             if(map.get(x)>= 2){
