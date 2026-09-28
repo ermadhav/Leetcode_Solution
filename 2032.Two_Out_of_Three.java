@@ -5,12 +5,11 @@ class Solution {
         HashSet<Integer> set2 =new HashSet<>();
         HashSet<Integer> set3 =new HashSet<>();
 
-        // add elements of each array into sets
+        // add elements of each array into their respective sets
         for(int x:nums1)set1.add(x);
         for(int x:nums2)set2.add(x);
         for(int x:nums3)set3.add(x);
         
-        // add elements of each array into their respective sets
 
         // Count elements from set1
         for(int x: set1){
