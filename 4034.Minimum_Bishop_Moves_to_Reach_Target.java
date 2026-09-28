@@ -11,6 +11,7 @@ class Solution {
         // if there is diff in color of source and taarget (eg src = white, target = black)
         }else if((sc+sr)%2 != (tr+tc)%2){
             return -1;
+        // same diagonal then move  = 1
         }else if(Math.abs(sr-tr) == Math.abs(sc-tc)){
             return 1;
         }
