@@ -4,6 +4,7 @@ class Solution {
         for(int i=0; i<batteryPercentages.length; i++){
             if(batteryPercentages[i] > 0){
                 count++;
+                // decrease the batteryPercentages by 1 from index-i to last using another loop 
                 for(int j=i; j<batteryPercentages.length; j++){
                     batteryPercentages[j] = batteryPercentages[j]-1;
                 }
