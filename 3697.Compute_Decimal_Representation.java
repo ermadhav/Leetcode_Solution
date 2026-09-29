@@ -3,6 +3,7 @@ class Solution {
             String s = String.valueOf(n);
             int[] ans = new int[s.length()];
             int count =0;
+            // ones, twos...
             int place =1;
             for(int i=s.length()-1; i>=0 ;i--){
                 int digit = s.charAt(i)-'0';
