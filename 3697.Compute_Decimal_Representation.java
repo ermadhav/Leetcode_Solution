@@ -8,6 +8,7 @@ class Solution {
             // taverse from right to left
             for(int i=s.length()-1; i>=0 ;i--){
                 int digit = s.charAt(i)-'0';
+                // ignore 0s
                 if(digit !=0){
                     ans[count++] = digit*place;
                 }
