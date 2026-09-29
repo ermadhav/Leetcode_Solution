@@ -5,6 +5,7 @@ class Solution {
             int count =0;
             // ones, twos...
             int place =1;
+            // taverse from right to left
             for(int i=s.length()-1; i>=0 ;i--){
                 int digit = s.charAt(i)-'0';
                 if(digit !=0){
