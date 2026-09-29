@@ -17,6 +17,7 @@ class Solution {
                 place *= 10;
             }
         int[] result = new int[count];
+        // reverse to get ans
         for(int i=0; i<count; i++){
             result[i] = ans[count-1-i];
         }
