@@ -10,6 +10,7 @@ class Solution {
                 int digit = s.charAt(i)-'0';
                 // ignore 0s
                 if(digit !=0){
+                    // useing for decimals
                     ans[count++] = digit*place;
                 }
                 place *= 10;
