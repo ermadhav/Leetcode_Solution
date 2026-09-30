@@ -16,6 +16,7 @@ class Solution {
         String ans="";
         // looping through message
         for(char c:message.toCharArray()){
+            // keep space as it is
             if(c == ' '){
                 ans +=' ';
             }else{
