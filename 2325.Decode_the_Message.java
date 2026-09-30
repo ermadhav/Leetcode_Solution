@@ -2,6 +2,7 @@ class Solution {
     public String decodeMessage(String key, String message) {
         // store the letters
         char[] map=new char[26];
+        // starting from a
         char ch ='a';
         for(char c:key.toCharArray()){
             if(c != ' ' && map[c - 'a'] == 0){
