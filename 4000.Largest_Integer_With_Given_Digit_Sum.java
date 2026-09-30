@@ -1,9 +1,11 @@
 class Solution {
     public int largestInteger(int n, int s) {
+        // sum will not exceed 9*n
         if(s>9*n){
             return -1;
         }
         StringBuilder ans = new StringBuilder();
+        // add max digit first
         while(s>=9){
             ans.append('9');
             s-=9;
