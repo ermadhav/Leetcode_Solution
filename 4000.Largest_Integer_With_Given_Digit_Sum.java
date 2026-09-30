@@ -14,6 +14,7 @@ class Solution {
         if(s>0){
             ans.append((char)('0'+s));
         }
+        // filling remaing place with 0
         while(ans.length()<n){
             ans.append('0');
         }
