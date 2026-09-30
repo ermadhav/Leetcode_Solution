@@ -4,6 +4,7 @@ class Solution {
         char[] map=new char[26];
         // starting from a
         char ch ='a';
+        // going through each char of keay
         for(char c:key.toCharArray()){
             if(c != ' ' && map[c - 'a'] == 0){
                 map[c-'a']=ch;
