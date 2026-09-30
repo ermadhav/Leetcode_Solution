@@ -10,7 +10,7 @@ class Solution {
         for(int n:map.keySet()){
             int freq =map.get(n);
             if(freq%k == 0){
-                // if divisible add it to sum
+                // if divisible add it to sum as many times as it appears
                 sum += n*freq;
             }
         }
