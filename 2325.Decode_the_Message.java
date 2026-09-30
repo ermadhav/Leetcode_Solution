@@ -3,7 +3,7 @@ class Solution {
         char[] map=new char[26];
         char ch ='a';
         for(char c:key.toCharArray()){
-            if(ch !=' ' && map[c - 'a'] == 0){
+            if(c != ' ' && map[c - 'a'] == 0){
                 map[c-'a']=ch;
                 ch++;
             }
