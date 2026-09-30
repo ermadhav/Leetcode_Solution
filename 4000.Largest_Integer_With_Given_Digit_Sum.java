@@ -10,6 +10,7 @@ class Solution {
             ans.append('9');
             s-=9;
         }
+        // add remaining sum
         if(s>0){
             ans.append((char)('0'+s));
         }
