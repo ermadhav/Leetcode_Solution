@@ -14,6 +14,7 @@ class Solution {
             }
         }
         String ans="";
+        // looping through message
         for(char c:message.toCharArray()){
             if(c == ' '){
                 ans +=' ';
