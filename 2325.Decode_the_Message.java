@@ -20,6 +20,7 @@ class Solution {
             if(c == ' '){
                 ans +=' ';
             }else{
+                // replacce char with mapped letter
                 ans +=map[c-'a'];
             }
         }
