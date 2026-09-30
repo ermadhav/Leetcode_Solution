@@ -6,6 +6,7 @@ class Solution {
         char ch ='a';
         // going through each char of keay
         for(char c:key.toCharArray()){
+            // if character is not space and not already mapped
             if(c != ' ' && map[c - 'a'] == 0){
                 map[c-'a']=ch;
                 ch++;
