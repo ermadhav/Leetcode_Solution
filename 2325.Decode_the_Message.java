@@ -8,6 +8,7 @@ class Solution {
         for(char c:key.toCharArray()){
             // if character is not space and not already mapped
             if(c != ' ' && map[c - 'a'] == 0){
+                // map this char to 'a', 'b', etc
                 map[c-'a']=ch;
                 ch++;
             }
