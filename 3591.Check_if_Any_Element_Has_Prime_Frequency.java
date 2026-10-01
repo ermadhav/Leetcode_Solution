@@ -7,6 +7,7 @@ class Solution {
         }
         // check the frequency of each number
         for(int count:freq.values()){
+            // 0 ans 1 cannot be prime
             if(count<2) continue;
             boolean ans = true;
             for(int i=2; i*i<= count; i++){
