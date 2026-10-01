@@ -21,6 +21,7 @@ class Solution {
             if(ans) return true;
             
         }
+        // no prime found
         return false;
     }
 }
