@@ -10,6 +10,7 @@ class Solution {
             // 0 ans 1 cannot be prime
             if(count<2) continue;
             boolean ans = true;
+            // if frequency is prime or not
             for(int i=2; i*i<= count; i++){
                 if(count%i == 0){
                     ans = false;
