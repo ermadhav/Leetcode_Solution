@@ -17,6 +17,7 @@ class Solution {
                     break;
                 }
             }
+            // if any frequency is prime, return true
             if(ans) return true;
             
         }
