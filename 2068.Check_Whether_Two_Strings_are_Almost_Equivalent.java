@@ -1,5 +1,6 @@
 class Solution {
     public boolean checkAlmostEquivalent(String word1, String word2) {
+        // store frequency of each letter in both words
         int[] a = new int[26];
         int[] b = new int[26];
         // count char of word1
