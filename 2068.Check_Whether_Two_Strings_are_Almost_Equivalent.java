@@ -3,11 +3,11 @@ class Solution {
         // store frequency of each letter in both words
         int[] a = new int[26];
         int[] b = new int[26];
-        // count char of word1
+        // count letters of word1
         for(char ch: word1.toCharArray()){
             a[ch-'a']++;
         }
-        // count char of word2
+        // count letters of word2
         for(char ch: word2.toCharArray()){
             b[ch-'a']++;
         }
