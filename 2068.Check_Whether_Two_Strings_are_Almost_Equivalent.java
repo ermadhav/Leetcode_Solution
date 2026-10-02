@@ -11,7 +11,7 @@ class Solution {
         for(char ch: word2.toCharArray()){
             b[ch-'a']++;
         }
-        // subtract char from word2
+        // check frequency diff for each letter
         for(int i=0; i<26;i++){
             if(Math.abs(a[i]-b[i])>3){
                 return false;
