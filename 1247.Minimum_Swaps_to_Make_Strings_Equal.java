@@ -12,10 +12,11 @@ class Solution {
                 yx++;
             }
         }
-        // total mismatches must be even
+        // odd total mismatches cannot be fixed
         if ((xy + yx) % 2 != 0) {
             return -1;
         }
+        // pair same mismatches; leftover pair needs 2 swaps
         return (xy / 2) + (yx / 2) + (xy % 2) * 2;
     }
 }
