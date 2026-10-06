@@ -39,7 +39,7 @@ class Solution {
                 if(count >0){
                     count--; // if matches with "("
                 }else{
-                    ans++;
+                    ans++; // needed '('
                 }
             }
         }
