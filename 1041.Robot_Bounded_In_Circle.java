@@ -2,6 +2,7 @@ class Solution {
     public boolean isRobotBounded(String instructions) {
         int x =0;
         int y =0;
+        // 0=n, 1=e, 2=s, 3=w;
         int dir =0;
         for(char ch: instructions.toCharArray()){
             if(ch == 'G'){
