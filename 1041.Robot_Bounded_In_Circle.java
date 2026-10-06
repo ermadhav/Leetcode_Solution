@@ -5,6 +5,7 @@ class Solution {
         int dir =0;
         for(char ch: instructions.toCharArray()){
             if(ch == 'G'){
+                // move in current direction
                 if(dir == 0){
                     y++;
                 }else if(dir == 1){
@@ -15,9 +16,9 @@ class Solution {
                     x--;
                 }
             }else if(ch == 'L'){
-                dir =(dir+3)%4;
+                dir =(dir+3)%4; // turn left
             }else{
-                dir =(dir+1)%4;
+                dir =(dir+1)%4; // turn right
             }
         }
         return (x == 0 && y == 0) || dir != 0;
