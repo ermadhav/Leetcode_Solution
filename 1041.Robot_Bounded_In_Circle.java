@@ -21,7 +21,7 @@ class Solution {
                 dir =(dir+1)%4; // turn right
             }
         }
-        // if back at start or not facing North
+        // if back at start or not facing North/
         return (x == 0 && y == 0) || dir != 0;
     }
 }
