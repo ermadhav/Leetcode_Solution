@@ -1,3 +1,5 @@
+Approach --> 1 
+
 class Solution {
     public int minAddToMakeValid(String s) {
         Stack<Character> stack = new Stack<>();
