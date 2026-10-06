@@ -43,6 +43,6 @@ class Solution {
                 }
             }
         }
-        return ans+count;
+        return ans+count; // add the missing brackets for final ans
     }
 }
