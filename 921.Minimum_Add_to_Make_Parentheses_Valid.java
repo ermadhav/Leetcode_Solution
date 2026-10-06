@@ -30,8 +30,8 @@
 
 class Solution {
     public int minAddToMakeValid(String s) {
-        int count =0;
-        int ans =0;
+        int count =0; // unmatched '('
+        int ans =0; // needed ')'
         for(char c:s.toCharArray()){
             if(c == '('){
                 count++;
