@@ -37,7 +37,7 @@ class Solution {
                 count++;
             }else{
                 if(count >0){
-                    count--;
+                    count--; // if matches with "("
                 }else{
                     ans++;
                 }
