@@ -11,6 +11,7 @@ class Solution {
                 return num;
             }
         }
+        // if no unique even number found
         return -1;
     }
 }
