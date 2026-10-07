@@ -5,6 +5,7 @@ class Solution {
         for(int num:nums){
             map.put(num, map.getOrDefault(num, 0)+1);
         }
+        //findinf the first unique even number
         for(int num:nums){
             if(num%2 == 0 && map.get(num) == 1){
                 return num;
