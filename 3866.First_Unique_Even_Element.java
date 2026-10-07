@@ -1,6 +1,7 @@
 class Solution {
     public int firstUniqueEven(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
+        // counting the frequency of each number
         for(int num:nums){
             map.put(num, map.getOrDefault(num, 0)+1);
         }
